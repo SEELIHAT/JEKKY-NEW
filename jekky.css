@@ -1,0 +1,30 @@
+.asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:10px; border:3px solid red;background-color:none;} 
+  body{background-color:rgb(104, 109, 23);}
+.button{border:3px solid yellow; color:rgb(105, 17, 17); color:yellow;
+   padding:5px; font-size:12px; font-style:italic;background-color:red;}
+   button{
+   box-shadow:inset 1px 1px 1px black,
+   inset -1px -1px -1px black;}
+.dropdown-content a{padding:10px; color:red; border:3px solid gray; background-color:yellow; }
+.img{width:100%; height:auto; z-index:-3;position:absolute; top:0; left:0; right:0;}
+
+.dropdown {
+        position: relative;
+        display: inline-block;
+      }
+  
+.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:white;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+ 
+.dropdown:hover .dropdown-content {
+        display: grid;
+      }
+      h1{text-align:center;COLOR:red;float:left;
+         text-shadow:2px 2px 2px black;  margin-top:50px; left:25%;}
+     
