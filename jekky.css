@@ -6,7 +6,6 @@
    box-shadow:inset 1px 1px 1px black,
    inset -1px -1px -1px black;}
 .dropdown-content a{padding:10px; color:red; border:3px solid gray; background-color:yellow; }
-.img{width:100%; height:auto; z-index:-3;position:absolute; top:0; left:0; right:0;}
 
 .dropdown {
         position: relative;
@@ -25,6 +24,37 @@
 .dropdown:hover .dropdown-content {
         display: grid;
       }
-      h1{text-align:center;COLOR:red;float:left;
-         text-shadow:2px 2px 2px black;  margin-top:50px; left:25%;}
+
+.img{width:100%; height:auto; z-index:-3;position:absolute; top:0; left:0; right:0;}
+.imgaside{width:20px ; height:20px; padding:5px;}
+.header{display:flex;flex-direction:column;gap:20px;}
+.hfirst{text-align:center; margin:auto; transform:skewY(5deg);margin-top:50px; 
+  text-shadow:1px 3px 1px yellow;}    
+ h1{text-align:center;COLOR:red;float:left;
+         text-shadow:2px 2px 4px white;  margin-top:50px; left:25%;z-index:1000;}
+.ptop{color:black; font-style:italic; font-weight: bold; text-shadow:1px 1px 2px white;font-size:20px;}
+.hsecond{text-align:center;font-style:italic ;
+  text-shadow:3px 3px 8px white,
+  -3px -3px 8px white;}
+.spanduo{color:red;font-style: oblique;}
+.second{border:2px solid black;
+  box-shadow:inset 2px 2px 0px 0px gray,
+inset -2px -2px 0px 0px gray;width:40%;margin:auto;} 
+.senter{font-size:20px; color:red; font-style: italic;
+  text-shadow:1px 1px 2px black;text-align:center ;}
+.underaside{position:absolute; z-index:0; border-radius:50%; border:5px solid black;
+           animation-name:img ; animation-duration: 5s; top:60px; left:60px; opacity:0.5;width:150px;height:150px;}  
+           @keyframes img{10%{top:12%;left:12%;}90%{top:40%;left:90%;}100%{top:100%;left:100%;display:none;}}
+.underaside2{position:absolute; z-index:0; border-radius:50%; border:5px solid black;
+            animation-name:img ; animation-duration: 5s; top:10%; right:10%; opacity:0.5;width:150px;height:150px;}  
+           @keyframes img{10%{top:12%;right:12%;}90%{top:40%;right:60%;}100%{top:50%;right:70%;display:none;}}
+ .choose{display:flex;overflow: hidden;flex-wrap: nowrap;}
+ .first{border:2px solid black;
+  box-shadow:
+  inset 2px 2px 0px 0px gray,
+  inset -2px -2px 0px 0px gray; width:40%;margin:auto;}
+.promo::after{container:src="image\1721115395575.jpeg" ; position:absolute; z-index:3;opacity:0.5; top:10%; left:50%;}
+ 
+
+
      
