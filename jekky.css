@@ -5,6 +5,8 @@
    button{
    box-shadow:inset 1px 1px 1px black,
    inset -1px -1px -1px black;}
+   .buttontwo{border:3px solid yellow; color:rgb(105, 17, 17); color:yellow;
+    padding:5px; font-size:12px; font-style:italic;background-color:red;}
 .dropdown-content a{padding:10px; color:red; border:3px solid gray; background-color:yellow; }
 
 .dropdown {
@@ -27,19 +29,24 @@
 
 .img{width:100%; height:auto; z-index:-3;position:absolute; top:0; left:0; right:0;}
 .imgaside{width:20px ; height:20px; padding:5px;}
+.imgbutton{border:2px solid brown;
+   width:60%;margin:auto;border:5px solid brown;}
 .header{display:flex;flex-direction:column;gap:20px;}
 .hfirst{text-align:center; margin:auto; transform:skewY(5deg);margin-top:50px; 
   text-shadow:1px 3px 1px yellow;}    
  h1{text-align:center;COLOR:red;float:left;
          text-shadow:2px 2px 4px white;  margin-top:50px; left:25%;z-index:1000;}
-.ptop{color:black; font-style:italic; font-weight: bold; text-shadow:1px 1px 2px white;font-size:20px;}
+.ptop{color:yellow; font-style:italic; font-weight: bold; text-shadow:1px 1px 2px black;font-size:20px;}
+
 .hsecond{text-align:center;font-style:italic ;
   text-shadow:3px 3px 8px white,
   -3px -3px 8px white;}
 .spanduo{color:red;font-style: oblique;}
 .second{border:2px solid black;
-  box-shadow:inset 2px 2px 0px 0px gray,
-inset -2px -2px 0px 0px gray;width:40%;margin:auto;} 
+  box-shadow:
+  inset 2px 2px 0px 0px gray,
+  inset -2px -2px 0px 0px gray; width:40%;margin:auto;}
+.second a{color:red; font-size:18px;} 
 .senter{font-size:20px; color:red; font-style: italic;
   text-shadow:1px 1px 2px black;text-align:center ;}
 .underaside{position:absolute; z-index:0; border-radius:50%; border:5px solid black;
@@ -48,12 +55,90 @@ inset -2px -2px 0px 0px gray;width:40%;margin:auto;}
 .underaside2{position:absolute; z-index:0; border-radius:50%; border:5px solid black;
             animation-name:img ; animation-duration: 5s; top:10%; right:10%; opacity:0.5;width:150px;height:150px;}  
            @keyframes img{10%{top:12%;right:12%;}90%{top:40%;right:60%;}100%{top:50%;right:70%;display:none;}}
- .choose{display:flex;overflow: hidden;flex-wrap: nowrap;}
+ .choose{display:grid;overflow: hidden;flex-wrap: nowrap;}
  .first{border:2px solid black;
   box-shadow:
   inset 2px 2px 0px 0px gray,
-  inset -2px -2px 0px 0px gray; width:40%;margin:auto;}
-.promo::after{container:src="image\1721115395575.jpeg" ; position:absolute; z-index:3;opacity:0.5; top:10%; left:50%;}
+  inset -2px -2px 0px 0px gray; width:60%;margin:auto;}
+  .first a{color:red; font-size:15px;}
+
+   #telegram-widget {margin-top:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0088cc; /* Change the background color as needed */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #telegram-widget a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  #telegram-widget img {
+    width: 40px; /* Adjust the size of the Telegram logo */
+    margin-right: 10px;
+  }
+  
+  #telegram-widget span {
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  .telega{background-color:rgb(85, 85, 238);color:white;border:2px solid rgb(85, 85, 238); border-radius:2px 2px 2px  2px;}
+  .kro{display:none;}
+  .bro{display:none;}
+  .spantwo{ color:red; font-style:italic;font-size:18px;}
+
+  .container {
+    margin-bottom: 30px;
+    display: flex;
+    border: 5px solid yellow;
+    border-radius: 5px 55px 5px 55px;
+    overflow: hidden;
+    gap: 20px;
+}
+.footer {
+    margin: 20px;
+    gap: 15px;
+}
+.footer address {
+    display: grid;
+    gap: 10px;
+}
+.footer img {
+    width: 20px;
+    height: 20px;
+}
+.footer p {
+    margin: 0;
+}
+.bod {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+    
+}
+.dno {align-items: center;
+    text-decoration:underline;
+    color:yellow;
+    margin:auto;
+   
+}
+.dno:hover {
+    text-decoration: underline;
+}
+.image-container img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    margin-top: 40px;
+}
  
 
 
