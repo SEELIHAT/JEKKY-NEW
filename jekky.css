@@ -1,4 +1,5 @@
-.asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:10px; border:3px solid red;background-color:none;} 
+.asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:10px;
+   border:3px solid red;background-color:none;} 
   body{background-color:rgb(104, 109, 23);}
 .button{border:3px solid yellow; color:rgb(105, 17, 17); color:yellow;
    padding:5px; font-size:12px; font-style:italic;background-color:red;}
@@ -50,18 +51,19 @@
 .senter{font-size:20px; color:red; font-style: italic;
   text-shadow:1px 1px 2px black;text-align:center ;}
 .underaside{position:absolute; z-index:0; border-radius:50%; border:5px solid black;
-           animation-name:img ; animation-duration: 5s; top:60px; left:60px; opacity:0.5;width:150px;height:150px;}  
+           animation-name:img ; animation-duration: 5s; top:60px; left:10%; opacity:0.5;
+           width:150px;height:150px;}  
            @keyframes img{10%{top:12%;left:12%;}90%{top:40%;left:90%;}100%{top:100%;left:100%;display:none;}}
 .underaside2{position:absolute; z-index:0; border-radius:50%; border:5px solid black;
-            animation-name:img ; animation-duration: 5s; top:10%; right:10%; opacity:0.5;width:150px;height:150px;}  
+            animation-name:img ; animation-duration: 5s; top:60px; right:10%; opacity:0.5;width:150px;height:150px;}  
            @keyframes img{10%{top:12%;right:12%;}90%{top:40%;right:60%;}100%{top:50%;right:70%;display:none;}}
  .choose{display:grid;overflow: hidden;flex-wrap: nowrap;}
- .first{border:2px solid black;
+ .first{border:3px solid red;
   box-shadow:
   inset 2px 2px 0px 0px gray,
   inset -2px -2px 0px 0px gray; width:60%;margin:auto;}
-  .first a{color:red; font-size:15px;}
-
+  .first a{color:red; font-size:15px; font-weight: bold;font-style:italic; animation-name:color; animation-duration:10s; text-shadow:1px 1px 2px yellow;}
+@keyframes color{25%{color:blue;}50%{color:goldenrod;}75%{color:#0088cc;}100%{color:brown;}}
    #telegram-widget {margin-top:30px;
     display: flex;
     align-items: center;
