@@ -57,10 +57,10 @@
            
 .underaside2{position:absolute; z-index:-1; border-radius:50%; border:5px solid black;
              width:20%;height:auto; top:5%;right:10%;opacity:0.5; animation-name:rotate;animation-duration:5s;}
-  @keyframes rotate{ 10%{transform: rotate(90deg) translate(40px 10px);opacity:0.7;border-radius: 25px 15px 25px 15px;}30%{transform: rotate(180deg)translate(30px 20px);opacity:0.9;border-radius: 55px 10px 35px 5px;}50%{transform: rotate(270deg)translate(20px 30px);opacity:0.7;border-radius: 5px 45px 25px 5px;}
-  70%{transform: rotate(320deg)translate(10px 40px);
+  @keyframes rotate{ 10%{transform: rotate(90deg);opacity:0.7;border-radius: 25px 15px 25px 15px;}30%{transform:rotate(180deg);opacity:0.9;border-radius: 55px 10px 35px 5px;}50%{transform: rotate(270deg);opacity:0.7;border-radius: 5px 45px 25px 5px;}
+  70%{transform: rotate(320deg);
     opacity:0.5;border-radius: 65px 25px 25px 15px;}
-    100%{transform: rotate(360deg)translate(50px 10px);opacity:0.3;border-radius: 15px 35px 10px 45px;}}             
+    100%{transform: rotate(360deg);opacity:0.3;border-radius: 15px 35px 10px 45px;}}             
           
  .choose{display:grid;overflow: hidden;flex-wrap: nowrap;}
  .first{border:3px solid red;
