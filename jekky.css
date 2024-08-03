@@ -50,22 +50,27 @@
 .second a{color:red; font-size:18px;} 
 .senter{font-size:20px; color:red; font-style: italic;
   text-shadow:1px 1px 2px black;text-align:center ;}
-  .underdiv{display:flex; width:50%; margin:auto;}
-.underaside{position:relative; z-index:0; border-radius:50%; border:5px solid black;
+  .underdiv{display:flex; width:50%; margin:auto;gap:10%;}
+.underaside{position:absolute; z-index:-1;top:15%;left:20%; border-radius:50%; border:5px solid black;
              
-           width:100px;height:100px;}  
+           width:20%;;height:auto;opacity:0.5;animation-name:rotate;animation-duration:5s;}  
            
-.underaside2{position:relative; z-index:0; border-radius:50%; border:5px solid black;
-             width:100px;height:100px;}
-               
+.underaside2{position:absolute; z-index:-1; border-radius:50%; border:5px solid black;
+             width:20%;height:auto; top:5%;right:10%;opacity:0.5; animation-name:rotate;animation-duration:5s;}
+  @keyframes rotate{ 10%{transform: rotate(90deg) translate(40px 10px);opacity:0.7;border-radius: 25px 15px 25px 15px;}30%{transform: rotate(180deg)translate(30px 20px);opacity:0.9;border-radius: 55px 10px 35px 5px;}50%{transform: rotate(270deg)translate(20px 30px);opacity:0.7;border-radius: 5px 45px 25px 5px;}
+  70%{transform: rotate(320deg)translate(10px 40px);
+    opacity:0.5;border-radius: 65px 25px 25px 15px;}
+    100%{transform: rotate(360deg)translate(50px 10px);opacity:0.3;border-radius: 15px 35px 10px 45px;}}             
           
  .choose{display:grid;overflow: hidden;flex-wrap: nowrap;}
  .first{border:3px solid red;
   box-shadow:
   inset 2px 2px 0px 0px gray,
   inset -2px -2px 0px 0px gray; width:60%;margin:auto;}
-  .first a{color:red; font-size:15px; font-weight: bold;font-style:italic; animation-name:color; animation-duration:10s; text-shadow:1px 1px 2px yellow;}
-@keyframes color{25%{color:blue;}50%{color:goldenrod;}75%{color:#0088cc;}100%{color:brown;}}
+  .first a{color:red; font-size:15px; font-weight: bold;font-style:italic; animation-name:color; animation-duration:20s; text-shadow:1px 1px 2px yellow;}
+@keyframes color{25%{color:blue;font-style:italic ;text-shadow:1px 1px 2px black; }50%{color:goldenrod;font-style:inherit;text-shadow:2px 2px 1px yellow;}
+75%{color:#0088cc;font-style:initial;text-shadow:1px 1px 2px red;}
+100%{color:brown;font-style:italic;text-shadow:1px 1px 2px yellow;}}
    #telegram-widget {margin-top:30px;
     display: flex;
     align-items: center;
