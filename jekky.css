@@ -148,7 +148,63 @@
     border-radius: 50%;
     margin-top: 40px;
 }
-a.youtube{color:red;font-size:23px; font-style:italic; text-decoration:dashed;text-shadow: 1px 1px 2px gold;}
-.youTube{display:flex; flex-wrap:nowrap;overflow: hidden;}
+a.youtube{color:red;font-size:23px; font-style:italic; text-decoration:dashed;background-color:white;
+  text-shadow: 1px 1px 2px gold;}
+.youTube{display:flex; flex-wrap:nowrap;overflow: hidden;
+  background-image: url('https://media.istockphoto.com/id/1500285927/photo/young-woman-a-university-student-studying-online.webp?b=1&s=170667a&w=0&k=20&c=w6oDn8-ru4jZhnnEt8AI6KdlgCJIgaaEZ4IMV50DnsQ=');
+  background-size: contain;background-repeat: repeat;border-top:3px dashed black;border-bottom:3px dashed black;}
+  @keyframes translate{10%{transform:translateX(10%);}100%{transform:translateX(100%);}}
 .afteryoutube{border-top:3px dashed black;border-bottom:3px dashed black;height:23px ;width:36px;}
-     
+.youTube2{animation-name:translate;animation-duration:20s;}
+#carousel-container {margin-top:30px;
+  width: 300px;height:300px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+border:3px solid yellow;
+}
+
+#image-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+#prevBtn, #nextBtn {
+   position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  cursor: pointer;
+border:3px solid yellow;
+font-size:15px;
+}
+
+#prevBtn {
+  left: 5px;
+}
+
+#nextBtn {
+  right: 5px;
+}
+.facechoose{display:flex; overflow: hidden;flex-wrap:wrap;margin:auto;}
+#products{display:grid;gap:20px; margin:auto;}
+
+.spanduo{color:rgb(197, 194, 32); font-style:italic;font-size:18px;font-family: Georgia,
+  serif; animation-name:color; animation-duration:20s; animation-delay: 4s;}
+  .spanduo{font-style: oblique;}
+  @keyframes color{20%{color:white;} 40%{color:red;}
+  60%{color:black;}100%{color:yellow;}}
+  .bodi{margin:auto;}
+  .underhop{width:280px; height:180px; border:5px solid goldenrod; border-radius:20px 35px 20px 35px;}
+  #hop{display:flex;gap:20px;}
+  .hop{padding:1px;}
+  .video-container{border:5px solid goldenrod; border-radius:20px 35px 20px 35px; }
+  .picturesyoutube{width:350px;height:auto; border:5px solid goldenrod;
+    box-shadow: 10px 10px 10px rgb(172, 7, 7)
+    -10px -10px 10px rgb(172, 7, 7) ; margin:auto;}
+  main{margin-top:35px;}
+  .blockoverfooter{display: flex; flex-wrap:wrap;margin:auto;}
