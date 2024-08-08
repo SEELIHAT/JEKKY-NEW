@@ -198,7 +198,7 @@ font-size:15px;
   .spanduo{font-style: oblique;}
   @keyframes color{20%{color:white;} 40%{color:red;}
   60%{color:black;}100%{color:yellow;}}
-  .bodi{margin:auto;}
+  .bodi{margin:auto;display:grid;}
   .underhop{width:280px; height:180px; border:5px solid goldenrod; border-radius:20px 35px 20px 35px;}
   #hop{display:flex;gap:20px;}
   .hop{padding:1px;}
@@ -208,3 +208,31 @@ font-size:15px;
     -10px -10px 10px rgb(172, 7, 7) ; margin:auto;}
   main{margin-top:35px;}
   .blockoverfooter{display: flex; flex-wrap:wrap;margin:auto;}
+  .ras{margin-left:25%;margin-top:3%;border:4px solid brown;width:200px;height:200px;overflow: hidden;}
+            .dwa{margin-left:3%;margin-top:-30%; border:4px solid brown;width:200px;height:200px;overflow: hidden;}
+            .tri{margin-left:25%;margin-top:-40%;border:4px solid brown;width:200px;height:200px;overflow: hidden;}
+            .bodi{margin-top:1px;display:grid;}
+
+            .pp{padding:5px; border:2px solid black;width:95%}
+            .up{padding:10px; border:2px solid black;margin:15px;}
+            .down{padding:10px; border:2px solid black;margin:15px;}
+            .left{padding:10px; border:2px solid black;margin:15px;}
+            .right{padding:10px; border:2px solid black;margin:15px;}
+            .prev{padding:10px; border:2px solid black;margin:15px;}
+            .next{padding:10px; border:2px solid black;margin:15px;}
+            .more{padding:10px; border:2px solid black;margin:15px;}
+            .less{padding:10px; border:2px solid black;margin:15px;}
+            .circle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+          
+          .circle {
+            stroke-dasharray: 0;
+            stroke-dashoffset: 0;
+            transition: stroke-dasharray 1.5s ease-out, stroke-dashoffset 1.5s ease-out;} 
+           #resizeBackground{text-align:center;padding:10px; border:2px solid black;margin:15px;}
+           .selected::after{content:"ordered";color:red;font-size:25px;z-index:1000;position:absolute; top:30px;}
+           .textMore{display:none;}    
