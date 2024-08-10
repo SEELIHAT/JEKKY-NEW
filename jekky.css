@@ -34,7 +34,8 @@
    width:60%;margin:auto;border:5px solid brown;}
 .header{display:flex;flex-direction:column;gap:20px;}
 .hfirst{text-align:center; margin:auto; transform:skewY(5deg);margin-top:50px; 
-  text-shadow:1px 3px 1px yellow;}    
+  text-shadow:2px 3px 5px white,
+  -2px -3px 5px white; ;}    
  h1{text-align:center;COLOR:red;float:left;
          text-shadow:2px 2px 4px white;  margin-top:50px; left:25%;z-index:1000;}
 .ptop{color:yellow; font-style:italic; font-weight: bold; text-shadow:1px 1px 2px black;font-size:20px;}
@@ -48,8 +49,9 @@
   inset 2px 2px 0px 0px gray,
   inset -2px -2px 0px 0px gray; width:40%;margin:auto;}
 .second a{color:red; font-size:18px;} 
-.senter{font-size:20px; color:red; font-style: italic;
-  text-shadow:1px 1px 2px black;text-align:center ;}
+.senter{font-size:20px;color: white; font-style: italic;
+  text-shadow:1px 1px 2px black,
+  -1px -1px 2px black ;text-align:center ;}
   .underdiv{display:flex; width:50%; margin:auto;gap:10%;}
 .underaside{position:absolute; z-index:-1;top:15%;left:20%; border-radius:50%; border:5px solid black;
              
@@ -69,8 +71,8 @@
   inset -2px -2px 0px 0px gray; width:60%;margin:auto;}
   .first a{color:red; font-size:15px; font-weight: bold;font-style:italic; animation-name:color; animation-duration:20s; text-shadow:1px 1px 2px yellow;}
 @keyframes color{25%{color:blue;font-style:italic ;text-shadow:1px 1px 2px black; }50%{color:goldenrod;font-style:inherit;text-shadow:2px 2px 1px yellow;}
-75%{color:#0088cc;font-style:initial;text-shadow:1px 1px 2px red;}
-100%{color:brown;font-style:italic;text-shadow:1px 1px 2px yellow;}}
+75%{color:#0f384c;font-style:initial;text-shadow:1px 1px 2px red;}
+100%{color:rgb(37, 14, 102);font-style:italic;text-shadow:1px 1px 2px yellow;}}
    #telegram-widget {margin-top:30px;
     display: flex;
     align-items: center;
@@ -142,12 +144,15 @@
     text-decoration: underline;
 }
 .image-container img {
-    width: 100%;
+ 
+    width:100%;
     height: 200px;
     border: 1px solid yellow;
     border-radius: 50%;
-    margin-top: 40px;
+    margin-top:40%;
 }
+
+ 
 a.youtube{color:red;font-size:23px; font-style:italic; text-decoration:dashed;background-color:white;
   text-shadow: 1px 1px 2px gold;}
 .youTube{display:flex; flex-wrap:nowrap;overflow: hidden;
@@ -235,4 +240,11 @@ font-size:15px;
             transition: stroke-dasharray 1.5s ease-out, stroke-dashoffset 1.5s ease-out;} 
            #resizeBackground{text-align:center;padding:10px; border:2px solid black;margin:15px;}
            .selected::after{content:"ordered";color:red;font-size:25px;z-index:1000;position:absolute; top:30px;}
-           .textMore{display:none;}    
+           .textMore{display: none;} 
+ 
+  @media only screen and (max-width:1100px){.underhop{display:none;}}
+  @media only screen and (min-width:1100px){.hopp{margin:auto;justify-content: center;}}
+  .spanTextMore{color:white; font-style:italic;font-size:18px;font-family: Georgia, serif; text-shadow:2px 2px 3px red;}
+  .facec{display:grid; margin:auto; justify-content: center;margin-top:20px;}
+  .bluespan{background-color:rgb(85, 85, 238);color:white;border:2px solid rgb(85, 85, 238); border-radius:2px 2px 2px  2px;}
+  .main-footer::after{content:url('');position:absolute;bottom:30px;width:20%;}

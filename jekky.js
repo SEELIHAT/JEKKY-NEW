@@ -130,6 +130,10 @@
       var selectedPhotoNumbers = Array.from(selectedPhotos).map(photo => photo.id.replace('photo', ''));
       document.getElementById('selectedPhotos').value = selectedPhotoNumbers.join(', ');
     }
+
+    
+      
+
     let currentSlide = 1;
      
     function changeSlide(n) {
@@ -165,7 +169,26 @@ document.getElementById("prev-button").addEventListener("click", function () {
   changeSlide(-1);
   startSlideShow();
 });
-button.onclick = function(){let text = document.querySelector('textMore');
-    text.classList.add();
-   
-}
+function changeDisplay() {
+    document.getElementById('myDiv').style.display = 'grid';
+    document.getElementById('myDiv').style.color = 'yellow';
+    document.getElementById('myDiv').style.fontStyle = 'italic';
+    document.getElementById('myDiv').style.fontWidth = 'bold';
+    document.getElementById('myDiv').style.fontSize = '20'+'px';
+  }
+  function sendMessageToWhatsApp(phoneNumber, imgId) {
+    var message = "Hello, I would like to order.";
+  
+    // Get the text content from the specified <p> element
+    var additionalMessage = document.getElementById(imgId);
+  
+    // Append the additional message to the main message
+    message += " " + additionalMessage;
+  
+    // Replace spaces with %20 for URL
+    message = encodeURIComponent(message);
+  
+    var url = "https://wa.me/" + phoneNumber  + message;
+  
+    window.open(url, '_blank');
+  }
