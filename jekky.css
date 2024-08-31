@@ -94,7 +94,7 @@
   box-shadow:
   inset 2px 2px 0px 0px gray,
   inset -2px -2px 0px 0px gray; width:60%;margin:auto;}
-  .first a{color:white; font-size:15px; font-weight: bold;font-style:italic; animation-name:color; animation-duration:20s; text-shadow:1px 1px 2px yellow;}
+  .first a{color:red; font-size:15px; font-weight: bold;font-style:italic; animation-name:color; animation-duration:20s; text-shadow:1px 1px 2px yellow;}
 
    #telegram-widget {margin-top:30px;
     display: flex;
@@ -280,7 +280,7 @@ font-size:15px;
   }
  
   @keyframes color{25%{color:blue;font-style:italic ;text-shadow:1px 1px 3px black; }50%{color:goldenrod;font-style:inherit;text-shadow:1px 1px 3px red;}
-  75%{color:aliceblue;font-style:initial;text-shadow:1px 1px 3px black;}
+  75%{color:blueviolet;font-style:initial;text-shadow:1px 1px 3px black;}
   100%{color:rgb(37, 14, 102);font-style:italic;text-shadow:1px 1px 2px yellow;}}
   @keyframes rotate{ 10%{transform: rotate(90deg);opacity:0.7;border-radius: 25px 15px 25px 15px;}30%{transform:rotate(180deg);opacity:0.9;border-radius: 55px 10px 35px 5px;}50%{transform: rotate(270deg);opacity:0.7;border-radius: 5px 45px 25px 5px;}
   70%{transform: rotate(320deg);
