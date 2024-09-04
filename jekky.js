@@ -192,3 +192,14 @@ function changeDisplay() {
   
     window.open(url, '_blank');
   }
+
+  let opentextButton = document.querySelector('.text'); // Select the button with class 'opentext'
+
+  opentextButton.onclick = function() {
+      let textElement = document.querySelector('.textone'); // Select the div with class 'textone'
+      if (textElement.style.display === 'block') {
+          textElement.style.display = 'none'; // Hide the text if it's currently visible
+      } else {
+          textElement.style.display = 'block'; // Show the text if it's currently hidden
+      }
+  };
