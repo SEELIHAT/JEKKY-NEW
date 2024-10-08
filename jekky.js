@@ -175,6 +175,7 @@ function changeDisplay() {
     document.getElementById('myDiv').style.fontStyle = 'italic';
     document.getElementById('myDiv').style.fontWidth = 'bold';
     document.getElementById('myDiv').style.fontSize = '20'+'px';
+    document.getElementById('button').style.display = 'none';
   }
   function sendMessageToWhatsApp(phoneNumber, imgId) {
     var message = "Hello, I would like to order.";
