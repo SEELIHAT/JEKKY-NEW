@@ -1,7 +1,13 @@
 .asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:10px;
    border:3px solid red;background-color:none;} 
    .afteryoutube{border-top:3px dashed black;border-bottom:3px dashed black;height:23px ;width:36px;}  
-  body{background-color:rgb(104, 109, 23);}
+ /* body{background-color:rgb(104, 109, 23);background-image: url(image\beutman.webp);}*/
+ body{background-image: url('image/volkano.webp');
+  background-size: cover; /* Makes sure the image covers the entire background */
+   background-position:center 10px; /* Centers the image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .button{border:3px solid yellow; color:rgb(105, 17, 17); color:yellow;
    padding:5px; font-size:12px; font-style:italic;background-color:red;}
    button{
@@ -20,7 +26,9 @@
   flex-wrap: wrap;
   
 }
-
+.ptop span{color:white;
+  text-shadow:2px 2px 2px black,
+  -2px -2px 2px black;}
 .bro{display:none;}
 .bluespan{background-color:rgb(85, 85, 238);color:white;border:2px solid rgb(85, 85, 238); border-radius:2px 2px 2px  2px;}
 .dno {align-items: center;
@@ -63,7 +71,11 @@
  h1{text-align:center;COLOR:red;float:left;
          text-shadow:2px 2px 4px white;  margin-top:50px; left:25%;z-index:1000;}
          .h1{z-index:-1;}
-.ptop{color:yellow; font-style:italic; font-weight: bold; text-shadow:1px 1px 2px black;font-size:20px;}
+.ptop{color:yellow; font-style:italic; font-weight: bold; 
+  text-shadow:
+  2px 2px 3px black,
+  -2px -2px 3px black;
+  font-size:20px;}
 
 .hsecond{text-align:center;font-style:italic ;
   text-shadow:3px 3px 8px white,
@@ -81,7 +93,7 @@
   text-shadow:1px 1px 2px black,
   -1px -1px 2px black ;text-align:center ;}
   .underdiv{display:flex; width:50%; margin:auto;gap:10%;}
-.underaside{position:absolute; z-index:-1;top:15%;left:20%; border-radius:50%; border:5px solid black;
+.underaside{position:absolute; z-index:-1;top:10%;left:40%; border-radius:50%; border:5px solid black;
              
            width:20%;;height:auto;opacity:0.5;animation-name:rotate;animation-duration:5s;}  
            
