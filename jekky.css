@@ -35,8 +35,10 @@
   text-decoration:underline;
   color:yellow;
   margin:auto;
- 
+ text-shadow: 3px 3px 3px black,
+ -3px -3px 3px black;
 }
+
 .dno:hover {
   text-decoration: underline;
 }
@@ -71,10 +73,10 @@
  h1{text-align:center;COLOR:red;float:left;
          text-shadow:2px 2px 4px white;  margin-top:50px; left:25%;z-index:1000;}
          .h1{z-index:-1;}
-.ptop{color:yellow; font-style:italic; font-weight: bold; 
+.ptop{color:rgb(252, 252, 57); font-style:italic; font-weight: bold; 
   text-shadow:
-  2px 2px 3px black,
-  -2px -2px 3px black;
+  3px 3px 4px black,
+  -3px -3px 4px black;
   font-size:20px;}
 
 .hsecond{text-align:center;font-style:italic ;
@@ -223,6 +225,10 @@ font-size:15px;
   #hop{display:flex;gap:20px;}
   .hop{padding:1px;}
   .video-container{border:5px solid goldenrod; border-radius:20px 35px 20px 35px; }
+  .patt{display:flex;align-content: center;justify-content: center;}
+  .divpatt{padding:5%;}
+  .divpatt img{width:120px;height:auto;border:5px solid gold;}
+  .padd{margin:30px;}
   .picturesyoutube{width:350px;height:auto; border:5px solid goldenrod;
     box-shadow: 10px 10px 10px rgb(172, 7, 7)
     -10px -10px 10px rgb(172, 7, 7) ; margin:auto;}
@@ -277,9 +283,20 @@ font-size:15px;
     width:80%;height:auto;z-index:1;position:absolute;top:0; left:2%;opacity: 0; animation-delay:2s ;} 
   #hop div{margin:auto;}
   #hop{display:flex;flex-wrap:wrap;}
-
+  .footer p{color:white; 
+    text-shadow: 2px 2px 3px black,
+    -2px -2px 3px black;}
+    .footer a{color:yellow; 
+      text-shadow: 2px 2px 3px black,
+      -2px -2px 3px black;}
   .inter{position:fixed;width:100%;top:10px;}
-  
+  .footerbig{font-size: 22px;font-style: italic;color:white; 
+    text-shadow: 1px 1px 4px black,
+    -1px -1px 4px black;}
+.butan{margin-top:-80px;margin-left:-80px;z-index:100;text-align: center;}
+    .cranch {
+      display: none;
+  }
     @keyframes translateX{
     10%{transform: translateX(0%)translateY(2%);opacity: 0.3;}
     50%{transform: translateX(20%)translateY(180%);opacity: 0.6;}

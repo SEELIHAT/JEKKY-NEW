@@ -177,6 +177,10 @@ function changeDisplay() {
     document.getElementById('myDiv').style.fontSize = '20'+'px';
     document.getElementById('button').style.display = 'none';
   }
+
+ 
+ 
+
   function sendMessageToWhatsApp(phoneNumber, imgId) {
     var message = "Hello, I would like to order.";
   
@@ -204,3 +208,16 @@ function changeDisplay() {
           textElement.style.display = 'block'; // Show the text if it's currently hidden
       }
   };
+   document.getElementById("huilo").addEventListener("click", function() {
+    var cranchElement = document.querySelector(".cranch");
+    var button = document.getElementById("huilo");
+
+    // Toggle display between 'block' and 'none'
+    if (cranchElement.style.display === "none" || cranchElement.style.display === "") {
+        cranchElement.style.display = "block";
+        button.textContent = "Не читать";  // Change button text to "No Read"
+    } else {
+        cranchElement.style.display = "none";
+        button.textContent = "Читать";  // Change button text back to "Toggle Text"
+    }
+});  
