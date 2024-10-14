@@ -26,6 +26,164 @@
   flex-wrap: wrap;
   
 }
+body.cage{background-image: url('image/darkwoman.webp');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;}
+ body.rage{background-image: url('image/happy.webp');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;}
+ body.page{background-image: url('image/dark.webp');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;}
+ body.mage{background-image: url('image/mountain-woman.png');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;}
+ body.kage{background-image: url('image/superman.webp');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;}
+ body.lage{background-image: url('image/oldmaninthesnow.webp');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;}
+ body.zage{background-image: url('image/onthebeach.webp');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
+ }
+ body.xage{background-image:url('image/1721382002374.jpeg');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
+ }
+ body.cage{background-image:url('image/1721382106377.jpeg');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
+ }
+ body.vage{background-image:url('image/beutman.webp');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
+ }
+ body.sport{background-image:url('image/aab.png');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
+ }
+ body.sportduo{background-image:url('image/aaa.png');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
+ }
+ body.dioptria{background-image:url('image/1721382796254.jpeg');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
+ }
+ body.dioptriaduo{background-image:url('image/womans-optic.png');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
+ }
+ body.dioptriaman{background-image:url('image/man-optic.png');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
+ }
+ body.dioptriamanduo{background-image:url('image/1721115278835.jpeg');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
+ }
+ body.children{background-image:url('image/childrens.png');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
+ }
 .ptop span{color:white;
   text-shadow:2px 2px 2px black,
   -2px -2px 2px black;}
@@ -224,11 +382,11 @@ font-size:15px;
   .underhop{width:280px; height:180px; border:5px solid goldenrod; border-radius:20px 35px 20px 35px;}
   #hop{display:flex;gap:20px;}
   .hop{padding:1px;}
-  .video-container{border:5px solid goldenrod; border-radius:20px 35px 20px 35px; }
-  .patt{display:flex;align-content: center;justify-content: center;}
-  .divpatt{padding:5%;}
-  .divpatt img{width:120px;height:auto;border:5px solid gold;}
-  .padd{margin:30px;}
+  .video-container{border:5px solid goldenrod; border-radius:20px 35px 20px 35px;width:280px;height:180px; }
+  .patt{display:flex;align-content: center;justify-content: space-around;}
+  .divpatt{padding:5%;display:grid;}
+  .divpatt img{width:120px;height:auto;border:5px solid gold; box-shadow: 0 0 0 0 white; animation: shadow 5s infinite, box 5s infinite;}
+  .padd{gap:20px;}
   .picturesyoutube{width:350px;height:auto; border:5px solid goldenrod;
     box-shadow: 10px 10px 10px rgb(172, 7, 7)
     -10px -10px 10px rgb(172, 7, 7) ; margin:auto;}
@@ -293,10 +451,14 @@ font-size:15px;
   .footerbig{font-size: 22px;font-style: italic;color:white; 
     text-shadow: 1px 1px 4px black,
     -1px -1px 4px black;}
-.butan{margin-top:-80px;margin-left:-80px;z-index:100;text-align: center;}
+.butan{margin-top:-20px;z-index:100;text-align: center;padding: 10px 20px;      /* Adds space inside the button */
+  cursor: pointer; }
+  .butana{margin-top:-20px;z-index:100;text-align: center;padding: 10px 20px;      
+    cursor: pointer; background-color: white; color:black;font-size:16px; text-align:center; text-decoration: none;}
     .cranch {
       display: none;
   }
+ .textopens{display:grid;}
     @keyframes translateX{
     10%{transform: translateX(0%)translateY(2%);opacity: 0.3;}
     50%{transform: translateX(20%)translateY(180%);opacity: 0.6;}
@@ -326,8 +488,25 @@ font-size:15px;
 60%{display:block;font-size:25px;}
 80%{display:block;font-size:30px;}
 100%{display:block;font-size:35px;}}
+@keyframes shadow {
+  0%, 100% {
+    box-shadow: 10px -10px 5px 3px white;
+  }
+  50% {
+    box-shadow: -10px 10px 5px 3px white;
+  }
+}
 
-    @media only screen and (max-width:1100px){.underhop{display:none;}}
+@keyframes box {
+  0%, 100% {
+    box-shadow: -10px 10px 5px 3px white;
+  }
+  50% {
+    box-shadow: 10px -10px 5px 3px white;
+  }
+}
+
+    @media only screen and (max-width:1100px){.underhop{display:none;}.video-container{width:140px;height:90px;}}
     @media only screen and (min-width:1100px){.hopp{margin:auto;justify-content: center;}}
     @media only screen and (min-width:1100px){.img-cont img{
       position:relative;
