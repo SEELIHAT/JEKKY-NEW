@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-a.button{text-decoration: none;
+/*a.button{text-decoration: none;
   border: 3px solid yellow;
  padding:5px; 
   font-weight: bold;
@@ -16,14 +16,17 @@ a.button{text-decoration: none;
    font-size:13px; font-style:italic;background-color:red;padding:5px;
   box-shadow:inset 1px 1px 1px black,
   inset -1px -1px -1px black; height:37px;}
-.button{ text-decoration: none;
-   border: 3px solid yellow;
-  padding:5px; 
-   font-weight: bold;
-  color:yellow;
-    font-size:13px; font-style:italic;background-color:red;padding:5px;
-   box-shadow:inset 1px 1px 1px black,
-   inset -1px -1px -1px black; height:37px;}
+*/
+
+  .button{ text-decoration: none;
+    border: 3px solid yellow;
+   padding:5px; 
+    font-weight: bold;
+   color:yellow;
+     font-size:13px; font-style:italic;background-color:red;padding:5px;
+    box-shadow:inset 1px 1px 1px black,
+    inset -1px -1px -1px black; height:37px;}
+
    .buttontwo{border:3px solid yellow; color:rgb(105, 17, 17); color:yellow;
     padding:5px; font-size:12px; font-style:italic;background-color:red;}
     .buttt{border:3px solid red;}
@@ -37,7 +40,7 @@ a.button{text-decoration: none;
   flex-wrap: wrap;
   
 }
-a.button.sd{padding:10px;}
+
 .choosep{text-align: center;width:70%;color:red;font-size:30px;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style: italic;font-weight: bold;align-items:center;margin:auto;
    border:5px solid black;
@@ -562,6 +565,7 @@ font-size:15px;
   .h3choose{font-size:25px; color:black; text-align:center;
     text-shadow:2px 2px 4px white,
     -2px -2px 4px white ;}
+    nav{z-index:1600;}
 
     @keyframes translateX{
     10%{transform: translateX(0%)translateY(2%);opacity: 0.3;}
