@@ -46,6 +46,9 @@
    border:5px solid black;
   text-shadow:2px 2px 4px white,
 -2px -2px 4px white;}
+.shopaimg{width:80px;height:auto;margin:auto;}
+
+
 body.fage{background-image: url('image/volkano.webp');
   background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Centers the image */
@@ -55,6 +58,14 @@ body.fage{background-image: url('image/volkano.webp');
  background-repeat: no-repeat;
  background-attachment: fixed;}
  body.document{background-image: url('image/documentman.png');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 10px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;}
+ body.opticajekky{background-image: url('image/opticajekky.webp');
   background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -566,7 +577,10 @@ font-size:15px;
     text-shadow:2px 2px 4px white,
     -2px -2px 4px white ;}
     nav{z-index:1600;}
-
+    .hap{padding:1px; margin-left:30px; width:40%;height:auto;}
+   
+    
+.shopaaimg{width:110px;height:auto;border:5px solid rgb(128, 112, 20);}
     @keyframes translateX{
     10%{transform: translateX(0%)translateY(2%);opacity: 0.3;}
     50%{transform: translateX(20%)translateY(180%);opacity: 0.6;}
@@ -628,4 +642,6 @@ font-size:15px;
      @media only screen and (max-width:1100px){.img-cont img{
        display:none;
       }}
-  
+      .gridtry{display:flex; flex-wrap:wrap;width:100px;; height:auto;gap:10px;}
+      .gridfirst{display:grid;grid-column: 200px 220px;}
+      .gridtree{display:grid;grid-template-columns: 100px 100px;gap:10px;grid-template-rows:120px 120px;}
