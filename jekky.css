@@ -645,3 +645,4 @@ font-size:15px;
       .gridtry{display:flex; flex-wrap:wrap;width:100px;; height:auto;gap:10px;}
       .gridfirst{display:grid;grid-column: 200px 220px;}
       .gridtree{display:grid;grid-template-columns: 100px 100px;gap:10px;grid-template-rows:120px 120px;}
+      .hit p{display:none;}
