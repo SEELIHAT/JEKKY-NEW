@@ -1,5 +1,5 @@
 .asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:10px;
-   border:3px solid red;background-color:none;z-index:3000;} 
+   border:3px solid red;background-color:none;z-index: 10;} 
    .afteryoutube{border-top:3px dashed black;border-bottom:3px dashed black;height:23px ;width:36px;}  
  /* body{background-color:rgb(104, 109, 23);background-image: url(image\beutman.webp);}*/
  body{background-image: url('image/volkano.webp');
@@ -325,7 +325,7 @@ border-width: 5px;
       }
 
 .img{width:100%; height:auto; z-index:-3;position:absolute; top:0; left:0; right:0;}
-.imgaside{width:20px ; height:20px; padding:5px;}
+.imgaside{width:20px ; height:20px; padding:5px;z-index:10;}
 .imgbutton{border:2px solid brown;
    width:60%;margin:auto;border:5px solid brown;}
 .header{display:flex;flex-direction:column;gap:20px;}
@@ -701,7 +701,7 @@ background-image: url('image/childrensbeutifulneo.png');
 background-size: cover; 
  background-position: center;
  background-repeat: no-repeat;}
-.slideimg{width:30%;height:auto;}
+
 
 @keyframes opacity{
 1%{opacity:1;display:flex;}20%{opacity:0.9;display:flex;}
@@ -727,7 +727,7 @@ background-size: cover;
       height: 100%;
   }
 
-.slideimg{
+.slideimg{z-index:10;
       width: 100%;
       height: 100%;
       object-fit: cover;
