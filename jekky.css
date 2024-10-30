@@ -1,5 +1,5 @@
 .asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:10px;
-   border:3px solid red;background-color:none;} 
+   border:3px solid red;background-color:none;z-index:3000;} 
    .afteryoutube{border-top:3px dashed black;border-bottom:3px dashed black;height:23px ;width:36px;}  
  /* body{background-color:rgb(104, 109, 23);background-image: url(image\beutman.webp);}*/
  body{background-image: url('image/volkano.webp');
@@ -668,10 +668,45 @@ background-image: url('image/lookstraitwoman.png');
   background-position: center;
   background-repeat: no-repeat;
 }
+.carouselman{animation-name:opacity;
+  
+  opacity:0;
+   animation-duration: 5s;
+width:30%;
+height:auto;
+overflow: hidden;
+position:absolute;
+top:30px;
+z-index:2000;
+left:35%;
+margin:auto;
+background-image: url('image/lookstraiman.png');
+background-size: cover; 
+ background-position: center;
+ background-repeat: no-repeat;
+}
+.carouselchildren{animation-name:opacity;
+  
+  opacity:0;
+   animation-duration: 5s;
+width:30%;
+height:auto;
+overflow: hidden;
+position:absolute;
+top:30px;
+z-index:2000;
+left:35%;
+margin:auto;
+background-image: url('image/childrensbeutifulneo.png');
+background-size: cover; 
+ background-position: center;
+ background-repeat: no-repeat;}
 .slideimg{width:30%;height:auto;}
 
 @keyframes opacity{
-1%{opacity:1;display:flex;}20%{opacity:0.9;display:flex;}40%{opacity:0.8;display:flex;}60%{opacity:0.7;display:flex;}80%{opacity:0.6;display:flex;}100%{opacity:0.5;display:flex;}}
+1%{opacity:1;display:flex;}20%{opacity:0.9;display:flex;}
+40%{opacity:0.8;display:flex;}60%{opacity:0.7;display:flex;}
+80%{opacity:0.5;display:flex;}100%{opacity:0.3;display:flex;}}
  @keyframes slide {
       0% { transform: translateX(0); }
       20% { transform: translateX(-100%); }
@@ -703,5 +738,12 @@ background-image: url('image/lookstraitwoman.png');
   .slide {transform: scale(1.4);
       flex: 0 0 100%;
       max-width: 100%;
-  } 
+  }
+  .slidesport {transform: scale(1.2);
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.slideimgchildren{transform: scale(0.8);
+  flex: 0 0 100%;
+  max-width: 100%;}
  
