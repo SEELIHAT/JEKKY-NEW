@@ -1,5 +1,6 @@
-.asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:10px;
-   border:3px solid red;background-color:none;z-index: 10;} 
+.asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:20px;
+   border:3px solid red;background-color:none;z-index: 10;}
+   .asidewoman img{width:20px;height:20px; font-size:1px;margin:auto;text-align:center;justify-content:space-around;padding:auto; } 
    .afteryoutube{border-top:3px dashed black;border-bottom:3px dashed black;height:23px ;width:36px;}  
  /* body{background-color:rgb(104, 109, 23);background-image: url(image\beutman.webp);}*/
  body{background-image: url('image/volkano.webp');
@@ -484,11 +485,11 @@ font-size:15px;
   -2px -2px 4px white ;display:flex;margin-left:90%;margin-top:-10px;}
 
  
- 
-  .underhop{width:280px; height:180px; border:5px solid goldenrod; border-radius:20px 35px 20px 35px;}
+  aside div img[alt]{font-size:0.05em;}
+  .underhop{width:280px; height:180px; border:5px solid goldenrod; border-radius:20px 35px 20px 35px;font-size:2px; }
   #hop{display:flex;gap:20px;}
-  .hop{padding:1px;}
-  .video-container{border:5px solid goldenrod; border-radius:20px 35px 20px 35px;width:280px;height:180px; }
+  .hop{padding:1px;display:flex;gap:20px;}
+  .video-container{border:5px solid goldenrod; border-radius:20px 35px 20px 35px;width:280px;height:180px;font-size:2px; }
   .patt{display:flex;align-content: center;justify-content: space-around;}
   .divpatt{padding:5%;display:grid;}
   .divpatt img{width:120px;height:auto;border:5px solid gold; box-shadow: 0 0 0 0 white; animation: shadow 5s infinite, box 5s infinite;}
@@ -553,7 +554,7 @@ font-size:15px;
     width:80%;height:auto;z-index:1;position:absolute;top:0; left:2%;opacity: 0; animation-delay:2s ;}
     .man{width:150px;height:100px;} 
   #hop div{margin:auto;}
-  #hop{display:flex;flex-wrap:wrap;}
+  #hop{display:flex;flex-wrap:wrap;align-items:center;}
   .footer p{color:white; 
     text-shadow: 2px 2px 3px black,
     -2px -2px 3px black;}
@@ -633,7 +634,7 @@ font-size:15px;
   }
 }
 
-    @media only screen and (max-width:1100px){.underhop{display:none;}.video-container{width:140px;height:90px;}}
+    @media only screen and (max-width:1100px){.underhop{display:none;}.video-container{width:140px;height:90px;font-size:2px; }}
     @media only screen and (min-width:1100px){.hopp{margin:auto;justify-content: center;}}
     @media only screen and (min-width:1100px){.img-cont img{
       position:relative;
