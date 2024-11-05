@@ -1,6 +1,6 @@
 .asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:20px;
-   border:3px solid red;background-color:none;z-index: 10;}
-   .asidewoman img{width:20px;height:20px; font-size:1px;margin:auto;text-align:center;justify-content:space-around;padding:auto; } 
+   border:3px solid red;background-color:none;z-index: 20;}
+   .asidewoman img{width:20px;height:20px; display:grid;z-index:20;margin:auto;padding-top:5px; padding-bottom: 5px;} 
    .afteryoutube{border-top:3px dashed black;border-bottom:3px dashed black;height:23px ;width:36px;}  
  /* body{background-color:rgb(104, 109, 23);background-image: url(image\beutman.webp);}*/
  body{background-image: url('image/volkano.webp');
