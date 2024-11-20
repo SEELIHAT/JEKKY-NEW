@@ -147,7 +147,7 @@ body.cage{background-image: url('image/darkwoman.webp');
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-size: cover; /* Makes sure the image covers the entire background */
-  background-position:center 10px; /* Centers the image */
+  background-position:center -180px; /* Centers the image */
  background-repeat: no-repeat;
  background-attachment: fixed;}
  body.kage{background-image: url('image/superman.webp');
@@ -216,7 +216,7 @@ body.cage{background-image: url('image/darkwoman.webp');
  background-attachment: fixed;
  filter: brightness(113%) hue-rotate(2deg) saturate(77%) contrast(142%);
  }
- body.sportduo{background-image:url('image/aaa.png');
+ body.sportduo{background-image:url('./image/aaa.jpg');
   background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -336,10 +336,10 @@ border-width: 5px;
  h1{text-align:center;COLOR:red;float:left;
          text-shadow:2px 2px 4px white;  margin-top:50px; left:25%;z-index:1000;}
          .h1{z-index:-1;}
-.ptop{color:rgb(252, 252, 57); font-style:italic; font-weight: bold; 
+.ptop{color:gold; font-style:italic; font-weight: bold; 
   text-shadow:
-  3px 3px 4px black,
-  -3px -3px 4px black;
+  3px 3px 15px black,
+  -3px -3px 15px black;
   font-size:20px;}
 .choose{display:grid;gap:20px;margin:auto;}
 .choosedown{display:flex;padding:0; flex-wrap:wrap;margin:auto;justify-content:center; width:70%;}
