@@ -338,8 +338,8 @@ border-width: 5px;
          .h1{z-index:-1;}
 .ptop{color:yellow; font-style:italic; font-weight: bold; 
   text-shadow:
-  3px 3px 15px black,
-  -3px -3px 15px black;
+  3px 3px 15px rgb(110, 16, 16),
+  -3px -3px 15px rgb(103, 18, 18);
   font-size:20px;}
 .choose{display:grid;gap:20px;margin:auto;}
 .choosedown{display:flex;padding:0; flex-wrap:wrap;margin:auto;justify-content:center; width:70%;}
