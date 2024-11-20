@@ -333,14 +333,16 @@ border-width: 5px;
 .hfirst{text-align:center; margin:auto; transform:skewY(5deg);margin-top:50px; 
   text-shadow:2px 3px 5px white,
   -2px -3px 5px white; ;}    
- h1{text-align:center;COLOR:red;float:left;
+ h1{text-align:center;COLOR:rgb(71, 62, 13);float:left;
          text-shadow:2px 2px 4px white;  margin-top:50px; left:25%;z-index:1000;}
          .h1{z-index:-1;}
-.ptop{color:yellow; font-style:italic; font-weight: bold; 
+       
+.ptop{color:yellow; font-style:italic; font-weight: bold;
+  
   text-shadow:
-  3px 3px 15px rgb(110, 16, 16),
-  -3px -3px 15px rgb(103, 18, 18);
-  font-size:20px;}
+  3px 3px 15px black,
+  -3px -3px 15px black;
+  font-size:20px;background-image: url(.image\backgroundtext.png);}
 .choose{display:grid;gap:20px;margin:auto;}
 .choosedown{display:flex;padding:0; flex-wrap:wrap;margin:auto;justify-content:center; width:70%;}
 .hsecond{text-align:center;font-style:italic ;
@@ -489,7 +491,7 @@ font-size:15px;
   .underhop{width:280px; height:180px; border:5px solid goldenrod; border-radius:20px 35px 20px 35px;font-size:2px; }
   #hop{display:flex;gap:20px;}
   .hop{padding:1px;display:flex;gap:20px;}
-  .video-container{border:5px solid goldenrod; border-radius:20px 35px 20px 35px;width:280px;height:180px;font-size:2px; }
+  .video-container{padding:5px;border:5px solid goldenrod; border-radius:20px 35px 20px 35px;width:280px;height:180px;font-size:2px; }
   .patt{display:flex;align-content: center;justify-content: space-around;}
   .divpatt{padding:5%;display:grid;}
   .divpatt img{width:120px;height:auto;border:5px solid gold; box-shadow: 0 0 0 0 white; animation: shadow 5s infinite, box 5s infinite;}
@@ -750,4 +752,31 @@ background-size: cover;
 .slideimgchildren{transform: scale(0.8);
   flex: 0 0 100%;
   max-width: 100%;}
+
+  .dropdow-content a{padding:10px; color:red; border:3px solid gray; background-color:yellow; }
+
+.dropdow {
+        position: relative;
+        display: inline-block;
+      }
+  
+.dropdow-content {
+        display: none;
+        position: absolute;
+        background-color:white;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
  
+.dropdow:hover .dropdown-content {
+        display: grid;
+      }
+      .butto{ text-decoration: none;
+       
+       padding:5px; 
+        
+       
+         font-size:13px; font-style:italic;padding:5px;
+        box-shadow:inset 1px 1px 1px black,
+        inset -1px -1px -1px black; width:280px; height:180px; border:5px solid goldenrod;} 
