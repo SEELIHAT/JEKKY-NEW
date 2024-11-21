@@ -333,7 +333,7 @@ border-width: 5px;
 .hfirst{text-align:center; margin:auto; transform:skewY(5deg);margin-top:50px; 
   text-shadow:2px 3px 5px white,
   -2px -3px 5px white; ;}    
- h1{text-align:center;COLOR:rgb(71, 62, 13);float:left;
+ h1{text-align:center;COLOR:black;float:left;
          text-shadow:2px 2px 4px white;  margin-top:50px; left:25%;z-index:1000;}
          .h1{z-index:-1;}
        
