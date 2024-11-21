@@ -177,7 +177,14 @@ function changeDisplay() {
     document.getElementById('myDiv').style.fontSize = '20'+'px';
     document.getElementById('button').style.display = 'none';
   }
-  
+  function changeDisplay(_one) {
+    document.getElementById('myP').style.display = 'grid';
+    document.getElementById('myP').style.color = 'yellow';
+    document.getElementById('myP').style.fontStyle = 'italic';
+    document.getElementById('myP').style.fontWidth = 'bold';
+    document.getElementById('myP').style.fontSize = '20'+'px';
+    document.getElementById('baton').style.display = 'none';
+  }
   let opentextButton = document.querySelector('.text'); // Select the button with class 'opentext'
 
   opentextButton.onclick = function() {
