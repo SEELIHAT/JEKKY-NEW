@@ -664,7 +664,10 @@ font-size:15px;
       .gridfirst{display:grid;grid-column: 200px 220px;}
       .gridtree{display:grid;grid-template-columns: 100px 100px;gap:10px;grid-template-rows:120px 120px;}
       .hit p{display:none;}
-      
+      .shopdoc div{width:220px; display:grid;margin:auto;gap:10px;}
+      .shopdoc p{ color:yellow; font-size: 15px;font-weight: bold; font-style: italic; 
+        text-shadow:3px 3px 10px rgb(18, 18, 102),
+      -3px -3px 10px rgb(16, 16, 113);}
    .carousel{animation-name:width;
    opacity:0;
     animation-duration: 5s;
