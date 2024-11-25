@@ -795,3 +795,44 @@ background-size: cover;
         inset -1px -1px -1px black; width:280px; height:180px; border:5px solid goldenrod;} 
         .shopdoc{margin:auto; display:flex; flex-wrap:wrap; gap:20px;}
         .shopdoc img{width:220px; height:auto; border:5px solid rgb(140, 103, 8);margin:auto;}
+       
+
+          .location {flex-wrap: wrap;
+            display: flex; /* Creates a flex container */
+            justify-content: space-around; /* Space between the children elements */
+            margin-top: 30px; /* Centers the container if it's a block element */
+        }
+        
+        .locationsatu{background-color: azure;
+            border: 5px solid rgb(103, 78, 17); /* Adds a border */
+            box-shadow: 3px 3px 3px 10px rgb(248, 247, 247); /* Adds shadow */
+             /* Height adjusts to content */
+            position: relative; /* Required for positioning pseudo-elements */
+        }
+        .locationdua{background-color: azure;
+          border: 5px solid rgb(103, 78, 17); /* Adds a border */
+          box-shadow: 3px 3px 3px 10px rgb(248, 247, 247); /* Adds shadow */
+          /* Height adjusts to content */
+          position: relative; /* Required for positioning pseudo-elements */
+      }
+        .locationsatu img{width:100px;height:auto;margin:auto;}
+        .locationdua img{width:100px;height:auto;margin:auto;}
+        .locationsatu::after {bottom:-1px;text-align: center;left:10px;
+            content: "Маршрут"; /* Text content for the pseudo-element */
+            font-size: 20px; /* Font size */
+            color: black; /* Font color */
+            font-style: italic; /* Italicize the text */
+            position: absolute;
+             /* Absolute positioning relative to the parent */
+             /* Distance from the top of the parent */
+        }
+        
+        .locationdua::after {bottom:-15px;text-align: center;left:10px;
+            content: "Маршрут"; /* Text content for the pseudo-element */
+            font-size: 20px; /* Font size */
+            color: black; /* Font color */
+            font-style: italic; /* Italicize the text */
+            position: absolute; /* Absolute positioning relative to the parent */
+             /* Distance from the top of the parent */
+        }
+        
