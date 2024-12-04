@@ -367,9 +367,13 @@ border-width: 5px;
   inset 2px 2px 0px 0px gray,
   inset -2px -2px 0px 0px gray; width:40%;margin:auto;}
 .second a{color:red; font-size:18px;} 
-.senter{font-size:20px;color: white; font-style: italic;
-  text-shadow:1px 1px 2px black,
-  -1px -1px 2px black ;text-align:center ;}
+
+  .senters{font-size:20px;color:yellow; font-style: italic;
+    text-shadow:2px 2px 4px black,
+    -2px -2px 4px black;text-align:center ;font-weight: bold;}
+    .senter{font-size:20px;color:yellow; font-style: italic;
+      text-shadow:2px 2px 4px black,
+      -2px -2px 4px black;text-align:center ;font-weight: bold;}
   .underdiv{display:flex; width:50%; margin:auto;gap:10%;}
 .underaside{position:absolute; z-index:-1;top:10%;left:40%; border-radius:50%; border:5px solid black;
              
@@ -587,13 +591,13 @@ font-size:15px;
  .textopens{display:grid;}
  h1.hchoose{font-size:30px; color:black;text-align:center; 
   text-shadow:2px 2px 4px white,
-  -2px -2px 4px white ;}
+  -2px -2px 4px white ;display:flex; flex-wrap:wrap;justify-content: center;align-items: center;}
  .h2choose{font-size:25px; color:black; text-align:center;
   text-shadow:2px 2px 4px white,
-  -2px -2px 4px white ;}
+  -2px -2px 4px white ;display:flex; flex-wrap:wrap;justify-content: center;align-items: center;}
   .h3choose{font-size:25px; color:black; text-align:center;
     text-shadow:2px 2px 4px white,
-    -2px -2px 4px white ;}
+    -2px -2px 4px white ;display:flex; flex-wrap:wrap;justify-content: center;align-items: center;}
     nav{z-index:1600;}
     .hap{padding:1px; margin-left:30px; width:40%;height:auto;}
    
