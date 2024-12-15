@@ -5,7 +5,7 @@
  /* body{background-color:rgb(104, 109, 23);background-image: url(image\beutman.webp);}*/
  body{background-image: url('image/volkano.webp');
   background-size: cover; /* Makes sure the image covers the entire background */
-   background-position:center 10px; /* Centers the image */
+   background-position:center 1px; /* Centers the image */
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
