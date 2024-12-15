@@ -1,6 +1,6 @@
 .asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:20px;
    border:3px solid red;background-color:none;z-index: 3000;}
-   .asidewoman img{width:20px;height:20px; display:grid;z-index:20;margin:auto;padding-top:5px; padding-bottom: 5px;} 
+   .asidewoman img{width:20px;height:20px; display:grid;z-index:20;margin:auto;padding-top:5px; padding-bottom: 5px;z-index:3000;} 
    .afteryoutube{border-top:3px dashed black;border-bottom:3px dashed black;height:23px ;width:36px;}  
  /* body{background-color:rgb(104, 109, 23);background-image: url(image\beutman.webp);}*/
  body{background-image: url('image/volkano.webp');
@@ -336,7 +336,7 @@ border-width: 5px;
       }
 
 .img{width:100%; height:auto; z-index:-3;position:absolute; top:0; left:0; right:0;}
-.imgaside{width:20px ; height:20px; padding:5px;z-index:10;}
+.imgaside{width:20px ; height:20px; padding:5px;z-index:3000;}
 .imgbutton{border:2px solid brown;
    width:60%;margin:auto;border:5px solid brown;}
 .header{display:flex;flex-direction:column;gap:20px;}
@@ -501,7 +501,7 @@ font-size:15px;
   -2px -2px 4px white ;display:flex;margin-left:90%;margin-top:-10px;}
 
  
-  aside div img[alt]{font-size:0.05em;}
+  aside div img[alt]{font-size:0.05em;z-index:3000;}
   .underhop{width:280px; height:180px; border:5px solid goldenrod; border-radius:20px 35px 20px 35px;font-size:2px; }
   #hop{display:flex;gap:20px;}
   .hop{padding:1px;display:flex;gap:20px;}
