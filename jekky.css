@@ -839,4 +839,20 @@ background-size: cover;
             position: absolute; /* Absolute positioning relative to the parent */
              /* Distance from the top of the parent */
         }
+        .nero:hover{background-image:url('./image/papiru.png');
+          background-size: cover; /* Ensures the image covers the entire background */
+          background-position: center; /* Centers the image */
+          background-repeat: no-repeat; /* Prevents the image from repeating */
+          background-size: cover; /* Makes sure the image covers the entire background */
+          background-position:center 1px; /* Centers the image */
+         background-repeat: no-repeat;
+         background-attachment: fixed;}
+         .senter:hover{background-image:url('./image/papiru.png');
+          background-size: cover; /* Ensures the image covers the entire background */
+          background-position: center; /* Centers the image */
+          background-repeat: no-repeat; /* Prevents the image from repeating */
+          background-size: cover; /* Makes sure the image covers the entire background */
+          background-position:center 1px; /* Centers the image */
+         background-repeat: no-repeat;
+         background-attachment: fixed;}
         
