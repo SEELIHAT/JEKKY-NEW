@@ -839,5 +839,21 @@ background-size: cover;
             position: absolute; /* Absolute positioning relative to the parent */
              /* Distance from the top of the parent */
         }
+        .nero:hover{background-color:rgb(90, 89, 89);
+          background-size: cover; /* Ensures the image covers the entire background */
+          background-position: center; /* Centers the image */
+          background-repeat: no-repeat; /* Prevents the image from repeating */
+          background-size: cover; /* Makes sure the image covers the entire background */
+          background-position:center 10px; /* Centers the image */
+         background-repeat: no-repeat;
+         background-attachment: fixed;}
+         .senter:hover{background-color:rgb(77, 76, 76);
+          background-size: cover; /* Ensures the image covers the entire background */
+          background-position: center; /* Centers the image */
+          background-repeat: no-repeat; /* Prevents the image from repeating */
+          background-size: cover; /* Makes sure the image covers the entire background */
+          background-position:center 10px; /* Centers the image */
+         background-repeat: no-repeat;
+         background-attachment: fixed;}
         
         
