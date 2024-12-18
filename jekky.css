@@ -1,6 +1,8 @@
-.asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:20px;
-   border:3px solid red;background-color:none;z-index:auto;}
-   .asidewoman img{width:20px;height:20px; display:grid;z-index:20;margin:auto;padding-top:5px; padding-bottom: 5px;z-index:auto;} 
+.asidewoman{position:fixed; top:5%; right:20px; width:30px; height:auto; display:grid;gap:20px;
+   border:3px solid red;background-color:none;z-index:50;}
+   aside a{z-index:50;}
+   aside img{z-index:50;}
+   .asidewoman img{width:20px;height:20px; display:grid;margin:auto;padding-top:5px; padding-bottom: 5px;} 
    .afteryoutube{border-top:3px dashed black;border-bottom:3px dashed black;height:23px ;width:36px;}  
  /* body{background-color:rgb(104, 109, 23);background-image: url(image\beutman.webp);}*/
  body{background-image: url('image/volkano.webp');
@@ -429,11 +431,11 @@ border-width: 5px;
 }
 .footer {
     margin: 20px;
-    gap: 15px;
+    gap: 5px;
 }
 .footer address {
     display: grid;
-    gap: 10px;
+    gap: 5px;
 }
 .footer img {
     width: 20px;
