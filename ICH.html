@@ -13,7 +13,8 @@
  
  <link rel="stylesheet" href="jekky.css">
 <link rel ="shortcut icon" href=".\image\jekkytiga.svg" width="100"height="100" type="image/png">
-	
+<script src="face.js" defer></script>
+<script src="jekky.js" defer></script>	
  <style>.order-text {
     display: none;
 }
@@ -21,45 +22,74 @@
         
     
         // Function to move and resize background using touch
-        function enableTouchControl() {
-            const backgroundContainer = document.getElementById("background-container");
-            let startX = 0, startY = 0, lastX = 0, lastY = 0, scale = 1;
+        function enableTouchForImages() {
+    const images = document.querySelectorAll('.carousel-image');
     
-            backgroundContainer.addEventListener('touchstart', function (event) {
+    images.forEach(image => {
+        let startX = 0, startY = 0, lastX = 0, lastY = 0, scale = 1;
+        let isDragging = false;
+
+        image.style.position = 'absolute';
+        image.style.transformOrigin = 'center';
+
+        image.addEventListener('touchstart', function (event) {
+            if (event.touches.length === 1) {
+                isDragging = true;
                 const touch = event.touches[0];
                 startX = touch.clientX;
                 startY = touch.clientY;
-                lastX = parseFloat(backgroundContainer.style.left) || 0;
-                lastY = parseFloat(backgroundContainer.style.top) || 0;
-            });
-    
-            backgroundContainer.addEventListener('touchmove', function (event) {
-                event.preventDefault();
+                lastX = parseFloat(image.style.left) || 0;
+                lastY = parseFloat(image.style.top) || 0;
+            }
+        });
+
+        image.addEventListener('touchmove', function (event) {
+            event.preventDefault();
+            if (isDragging && event.touches.length === 1) {
                 const touch = event.touches[0];
-    
                 let deltaX = touch.clientX - startX;
                 let deltaY = touch.clientY - startY;
-    
-                backgroundContainer.style.left = (lastX + deltaX) + 'px';
-                backgroundContainer.style.top = (lastY + deltaY) + 'px';
-            });
-    
-            backgroundContainer.addEventListener('gesturestart', function (event) {
+                image.style.left = (lastX + deltaX) + 'px';
+                image.style.top = (lastY + deltaY) + 'px';
+            }
+        });
+
+        image.addEventListener('touchend', function () {
+            isDragging = false;
+        });
+
+        // Pinch to Zoom
+        let initialDistance = 0;
+        let initialScale = 1;
+
+        image.addEventListener('touchstart', function (event) {
+            if (event.touches.length === 2) {
+                initialDistance = getDistance(event.touches);
+                initialScale = scale;
+            }
+        });
+
+        image.addEventListener('touchmove', function (event) {
+            if (event.touches.length === 2) {
                 event.preventDefault();
-                scale = parseFloat(backgroundContainer.style.transform.replace('scale(', '').replace(')', '')) || 1;
-            });
-    
-            backgroundContainer.addEventListener('gesturechange', function (event) {
-                event.preventDefault();
-                let newScale = scale * event.scale;
-                backgroundContainer.style.transform = `scale(${newScale})`;
-            });
-        }
-    
-        window.onload = function () {
-            enableTouchControl();
-        };
-    
+                let newDistance = getDistance(event.touches);
+                scale = initialScale * (newDistance / initialDistance);
+                image.style.transform = `scale(${scale})`;
+            }
+        });
+    });
+}
+
+function getDistance(touches) {
+    let dx = touches[0].clientX - touches[1].clientX;
+    let dy = touches[0].clientY - touches[1].clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+}
+
+window.onload = function () {
+    enableTouchForImages();
+};
+
     </script>
 <script>function sendCurrentOrderToWhatsApp(phoneNumber) {
     const images = document.querySelectorAll(".carousel-image");
