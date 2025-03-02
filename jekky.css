@@ -580,7 +580,7 @@ font-size:15px;
     .footer a{color:yellow; 
       text-shadow: 2px 2px 3px black,
       -2px -2px 3px black;}
-  .inter{position:fixed;width:100%;top:10px;}
+  .inter{position:fixed;width:100%;top:10px;z-index:2500;}
   .footerbig{font-size: 22px;font-style: italic;color:white; 
     text-shadow: 1px 1px 4px black,
     -1px -1px 4px black;}
@@ -866,4 +866,4 @@ background-size: cover;
           background-position:center 10px; /* Centers the image */
          background-repeat: no-repeat;
          background-attachment: fixed;}
-        
+        .net{display:none;}
