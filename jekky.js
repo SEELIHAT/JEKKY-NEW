@@ -190,6 +190,12 @@ function changeDisplay() {
   };
   
 
+  document.addEventListener('gesturestart', function (event) {
+    event.preventDefault();
+});
+document.addEventListener('dblclick', function (event) {
+    event.preventDefault();
+});
 
  /* function sendMessageToWhatsApp(phoneNumber, orderId) {
       // Get the text content of the <p> element with the specified id (order6)
