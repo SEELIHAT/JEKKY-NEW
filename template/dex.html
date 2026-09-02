@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello App</title>
+</head>
+<body>
+    <h1>Введите ваше имя</h1>
+    
+    <!-- Форма отправляет данные обратно на сервер -->
+    <form method="POST">
+        <input type="text" name="username" placeholder="Введите имя..." required>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <!-- Здесь отобразится результат из Python -->
+    {% if greeting %}
+        <h2>{{ greeting }}</h2>
+    {% endif %}
+</body>
+</html>

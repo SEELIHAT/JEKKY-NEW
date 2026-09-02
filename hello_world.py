@@ -16,7 +16,7 @@ def home():
             else:
                 greeting = f"Hello {name}"
 
-    return render_template("index.html", greeting=greeting)
+    return render_template("dex.html", greeting=greeting)
 
 
 # Исправлено: два подчеркивания с каждой стороны
