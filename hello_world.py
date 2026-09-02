@@ -1,4 +1,8 @@
-fruits = ("apple", "mango", "cherry")
-for x in fruits:
-  print(x)
-print("Hello world")
+# Ask the user for their name
+name = input("Enter your name: ")
+
+# Check if the name starts with the letter 'a' (case-insensitive)
+if name.lower().startswith('a'):
+    print("Hello guest")
+else:
+    print(f"Hello {name}!")
