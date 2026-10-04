@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello App</title>
+</head>
+<style>
+    .body {
+        background-color: yellow;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .modi {
+        background-color: green;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 30;
+        opacity: 0.5;
+    }
+
+    form {
+        background-color: white;
+        width: 50%;
+        color: black;
+        margin: auto;
+        text-align: center;
+        border: 3px solid gold;
+    }
+
+    .lazada {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        border: none;
+    }
+</style>
+
+<body>
+
+    <!-- Lazada UNDER the modi div -->
+    <iframe
+        class="lazada"
+        src="https://www.lazada.vn/">
+    </iframe>
+
+
+    <!-- Your overlay ABOVE Lazada -->
+    <div class="modi">
+
+        <h1>Введите ваше имя</h1>
+
+       <a class="start"
+   href="https://www.lazada.vn/"
+   target="_blank">
+   Mamba
+</a>
+
+        <form method="GET">
+            <input
+                type="text"
+                name="username"
+                placeholder="Введите имя..."
+                required
+            >
+
+            <button type="submit">Отправить</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
