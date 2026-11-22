@@ -34,57 +34,59 @@
 	
    
 
-    function updateSelectedPhotos() {
-      var selectedPhotos = document.querySelectorAll('.selected');
-      var selectedPhotoNumbers = Array.from(selectedPhotos).map(photo => photo.id.replace('photo', ''));
-      document.getElementById('selectedPhotos').value = selectedPhotoNumbers.join(', ');
-    }
-
    function uploadBackground() {
-        const backgroundInput = document.getElementById("background-input");
-        const backgroundContainer = document.getElementById("background-container");
+    const backgroundInput = document.getElementById("background-input");
+    const backgroundContainer = document.getElementById("background-container");
 
-        if (!backgroundContainer) {
-            // Create a new div for the background image
-            const newBackgroundContainer = document.createElement("div");
-            newBackgroundContainer.id = "background-container";
-            newBackgroundContainer.style.position = "absolute";
-            newBackgroundContainer.style.top = "20"+"px";
-            newBackgroundContainer.style.left = "0";
-            newBackgroundContainer.style.width = "100%";
-            newBackgroundContainer.style.height = "100%";
-            newBackgroundContainer.style.zIndex = "-1";
-
-            // Insert the new div before the image-container
-            document.getElementById("carousel-container").insertBefore(newBackgroundContainer, document.getElementById("image-container"));
-        }
-
-        if (backgroundInput.files && backgroundInput.files[0]) {
-            const reader = new FileReader();
-
-            reader.onload = function (e) {
-                // Set the background image on the new div
-                document.getElementById("background-container").style.backgroundImage = "url('" + e.target.result + "')";
-                // Reset background size to cover
-                document.getElementById("background-container").style.backgroundSize = "cover";
-            };
-
-            reader.readAsDataURL(backgroundInput.files[0]);
-        }
+    if (!backgroundInput.files || !backgroundInput.files[0]) {
+        return;
     }
 
-    
+    // Create background container if it doesn't exist
+    if (!backgroundContainer) {
+        const newBackgroundContainer = document.createElement("div");
 
-   
+        newBackgroundContainer.id = "background-container";
+        newBackgroundContainer.style.position = "absolute";
+        newBackgroundContainer.style.top = "20px";
+        newBackgroundContainer.style.left = "0";
+        newBackgroundContainer.style.width = "100%";
+        newBackgroundContainer.style.height = "100%";
+        newBackgroundContainer.style.zIndex = "-1";
 
-    function resizeBackground() {
-        const backgroundImage = document.getElementById("background-container");
-        const selectedPhoto = document.getElementById("photo" + currentSlide);
-        if (selectedPhoto) {
-            backgroundImage.style.backgroundSize = selectedPhoto.width + "px " + selectedPhoto.height + "px";
-        }
+        document.getElementById("carousel-container")
+            .insertBefore(
+                newBackgroundContainer,
+                document.getElementById("image-container")
+            );
     }
 
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+
+        const container = document.getElementById("background-container");
+
+        container.style.backgroundImage = "url('" + e.target.result + "')";
+        container.style.backgroundSize = "cover";
+
+        // Automatically resize after background image loads
+        requestAnimationFrame(function () {
+            resizeBackground();
+        });
+    };
+
+    reader.readAsDataURL(backgroundInput.files[0]);
+}
+function resizeBackground() {
+    const backgroundImage = document.getElementById("background-container");
+    const selectedPhoto = document.getElementById("photo" + currentSlide);
+
+    if (backgroundImage && selectedPhoto) {
+        backgroundImage.style.backgroundSize =
+            selectedPhoto.width + "px " + selectedPhoto.height + "px";
+    }
+}
     // Automatically send email when the page is loaded
     window.onload = function () {
         sendEmailNumber();
