@@ -23,6 +23,19 @@
     <header class="header">
         <h1 class ="hfirst">Женские поляризационные солнцезащитные очки</h1>
         <nav>
+            <div id="basket">
+
+    <h3>🛒 Your Basket</h3>
+
+    <div id="basket-items"></div>
+
+    <p id="basket-total">Total: 0 руб.</p>
+
+    <button onclick="sendBasketToWhatsApp('+79146209617')">
+        Send order to WhatsApp
+    </button>
+
+</div>
             <div class="dropdown">
                 <button class="button">Меню</button>
    <div class="dropdown-content" > 
@@ -192,14 +205,14 @@ document.getElementById("huilo").addEventListener("click", function() {
 
 
 <p class="cranch ptop"><br> <span>1.</span>Сначала вы нажимаете кнопку сверху и слева <span>Выбрать файл</span>.В форме под текстом<br>
-    <span>2.</span>Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.<br>
-    <span>3.</span>Нажмите на кнопку <span>В центр</span> для того, чтобы уменьшить  и отцентровать фото .<br>
-    <span>4.</span>Подстройте своё фото под рамку соответсвующего размера головы нажимая кнопки расположенные под фотографией<br> <span>Больше </span>&nbsp;<span>Меньше </span>&nbsp;<span>Право</span>&nbsp; <span>Лево</span>&nbsp; <span>Ниже</span>&nbsp;<span>Выше</span>&nbsp;.<br>
-    <span> 5.</span> Далее нажимайте <span>Слудущий</span> или <span>Преведущий</span>,чтобы подобрать очки нужного размера и фассона . <br>
-    <span>6.</span> Кликните на фото ,если очки вам понравились .  <br>
+<span>2.</span>Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.<br>
 
-        <span>7.</span>Вы зайдете в WhatsApp. Там вы сможете написать всю информацию о понравившихся очках и нажать «Отправить» .<br>
-            <span>8.</span> Когда мы освободимся, мы отправим вам сообщение или позвоним, чтобы узнать и уточнить время доставки.<br>
+<span>3.</span>Подстройте своё фото под рамку соответсвующего размера головы нажимая кнопки расположенные под фотографией<br> <span>Больше </span>&nbsp;<span>Меньше </span>&nbsp;<span>Право</span>&nbsp; <span>Лево</span>&nbsp; <span>Ниже</span>&nbsp;<span>Выше</span>&nbsp;.<br>
+<span> 4.</span> Далее нажимайте <span>Слудущий</span> или <span>Преведущий</span>,чтобы подобрать очки нужного размера и фассона . <br>
+<span>5.</span> Кликните на фото ,если очки вам понравились .  <br>
+
+<span>6.</span>Вы зайдете в WhatsApp. Там вы сможете написать всю информацию о понравившихся очках и нажать «Отправить» .<br>
+<span>7.</span> Когда мы освободимся, мы отправим вам сообщение или позвоним, чтобы узнать и уточнить время доставки.<br>
     Хорошего дня и удачных покупок.<br></p></section>
 
 <section class="blockoverfooter">
@@ -219,13 +232,13 @@ document.getElementById("huilo").addEventListener("click", function() {
                         onclick="sendMessageToWhatsApp('+79146209617', 'order1')">
                        
                             <img class="carousel-image" id="photo1" src=".\image\womanspolar (1).png" alt="Image 7001"
-                                onclick="sendMessageToWhatsApp('+79146209617', 'order2')">
+                                onclick="addToBasket('order1', 'photo1')">
                                 <img class="carousel-image" id="photo2" src=".\image\womanspolar (2).png" alt="Image 3"
-                        onclick="sendMessageToWhatsApp('+79146209617', 'order3')">
+                        onclick="addToBasket('order2', 'photo2')">
                          <img class="carousel-image" id="photo3" src=".\image\womanspolar (3).png" alt="Image 4"
-                         onclick="sendMessageToWhatsApp('+79146209617', 'order4')">
+                         onclick="addToBasket('order3', 'photo3')">
                         <img class="carousel-image" id="photo7004" src=".\image\womanspolar (4).png" alt="Image 5"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order5')">
+                            onclick="addToBasket('order4', 'photo4')">
                         <img class="carousel-image" id="photo5" src=".\image\womanspolar (5).png" alt="Image 6"
                             onclick="sendMessageToWhatsApp('+79146209617', 'order6')">
                         <img class="carousel-image" id="photo6" src=".\image\womanspolar (6).png" alt="Image 7"
@@ -270,7 +283,9 @@ document.getElementById("huilo").addEventListener("click", function() {
                             onclick="sendMessageToWhatsApp('+79146209617', 'order26')">
                         <img class="carousel-image" id="photo26" src=".\image\womanspolar (26).png" alt="Image 27"
                             onclick="sendMessageToWhatsApp('+79146209617', 'order27')"> 
-                            <p id="order1" >Номер заказа : 1 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
+                            <p id="order1" >Номер заказа : 1 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p> 
+        Choose
+    </button>
                             <p id="order2" >Номер заказа : 2 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
                             <p id="order3">Номер заказа : 3 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
                             <p id="order4">Номер заказа : 4 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
@@ -315,7 +330,7 @@ document.getElementById("huilo").addEventListener("click", function() {
                             onclick="moveBackground('less')">Меньше</button>
     
     
-                        <button id="resizeBackground" onclick="resizeBackground()">В центр</button>
+                        
     
                         <button class="more" id="more" onclick="moveBackground('more')">Больше</button>
                     </div>
