@@ -869,25 +869,3 @@ background-size: cover;
         .net{display:none;}
         .mir{border:2px solid black;}
         .rim{border:2px solid black;}
-
-        .seconddown-content a{padding:10px; color:red; border:3px solid gray; background-color:yellow; }
-
-.seconddown {z-index:100; margin-right: 10px;
-        position: relative;
-        display: inline-block;
-      }
-  
-.seconddown-content {max-width:320px;
-        display: none;
-        position: absolute;
-        background-color:white;
-        min-width: 100px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
- 
-.seconddown:hover .seconddown-content {
-        display: grid;
-      }
-
-     

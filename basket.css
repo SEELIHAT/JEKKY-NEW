@@ -1,0 +1,51 @@
+
+/* Jekky basket and selection controls */
+.jekky-nav{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;position:relative;z-index:2000;width:100%}
+.basket-toggle{display:inline-flex;align-items:center;gap:7px;border:2px solid #b38b52;border-radius:8px;background:#17334a;color:#fff;padding:10px 14px;font-weight:700;font-size:16px;cursor:pointer;min-height:42px}
+.basket-toggle:hover,.basket-toggle:focus{background:#102637;outline:2px solid #b38b52;outline-offset:2px}
+.basket-count{display:inline-flex;align-items:center;justify-content:center;min-width:23px;height:23px;padding:0 5px;border-radius:50%;background:#b38b52;color:#102637;font-weight:800}
+.basket-panel{position:absolute;right:0;top:calc(100% + 10px);width:min(440px,calc(100vw - 24px));max-height:min(78vh,720px);overflow:auto;padding:16px;background:#f7f4ee;color:#17334a;border:2px solid #b38b52;border-radius:12px;box-shadow:0 12px 35px #0005;z-index:5000;text-align:left}
+.basket-panel[hidden]{display:none!important}
+.basket-panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #d7c7ae;padding-bottom:8px;margin-bottom:10px}
+.basket-panel-head h3{margin:0;font-size:20px;color:#17334a}
+.basket-close{border:0;background:transparent;color:#17334a;font-size:28px;line-height:1;cursor:pointer}
+.basket-empty{margin:12px 0;color:#59636b}
+.basket-item{display:grid;grid-template-columns:66px minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid #ddd2c2}
+.basket-item img{width:66px;height:58px;object-fit:contain;background:#fff;border:1px solid #e0d6c8;border-radius:6px}
+.basket-item-info{display:flex;flex-direction:column;gap:5px;min-width:0;font-size:13px}
+.basket-item-info strong{font-size:14px}
+.basket-item-info span{color:#43515b}
+.basket-remove{border:1px solid #a33;background:#fff;color:#a33;border-radius:6px;padding:6px 8px;font-size:12px;cursor:pointer}
+.basket-total-line{display:flex;justify-content:space-between;padding:13px 0;font-size:18px}
+#basket-order-form{display:grid;gap:7px}
+#basket-order-form label{font-size:13px;font-weight:700}
+#basket-order-form input{box-sizing:border-box;width:100%;padding:10px;border:1px solid #b9ad9e;border-radius:6px;font-size:15px;background:#fff;color:#172b39}
+.basket-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.basket-action{border:0;border-radius:7px;padding:11px 8px;color:#fff;font-weight:700;font-size:13px;cursor:pointer}
+.basket-action:disabled{opacity:.6;cursor:wait}
+.whatsapp-action{background:#168b4b}
+.email-action{background:#17334a}
+.basket-status{font-size:13px;min-height:18px;margin:4px 0 0;color:#43515b}
+.basket-status.success{color:#16733d;font-weight:700}
+.basket-status.error{color:#b42318;font-weight:700}
+#carousel-container{position:relative}
+#image-container{width:100%;height:100%;display:flex;transition:transform .35s ease;will-change:transform}
+#image-container .carousel-image{display:block;flex:0 0 100%;width:100%;height:100%;object-fit:contain;box-sizing:border-box;cursor:default}
+#background-container{position:absolute;inset:0;z-index:0;pointer-events:none;background-repeat:no-repeat}
+#image-container{position:relative;z-index:1}
+.choose-product-area{position:absolute;z-index:5;left:0;right:0;bottom:8px;display:flex;flex-direction:column;align-items:center;gap:5px;pointer-events:none}
+.choose-current-button{pointer-events:auto;border:2px solid #b38b52;border-radius:7px;background:#17334a;color:#fff;padding:10px 18px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 2px 8px #0005}
+.choose-current-button:hover,.choose-current-button:focus{background:#102637;outline:2px solid #fff}
+#choose-feedback{display:none;padding:4px 8px;border-radius:5px;background:#f7f4ee;color:#176b3a;font-weight:700;font-size:13px;box-shadow:0 1px 5px #0003}
+#choose-feedback.is-visible{display:block}
+#basket-toggle.basket-has-items .basket-count{background:#f3d47b}
+@media(max-width:600px){
+ .jekky-nav{gap:7px}
+ .jekky-nav .button{font-size:14px;padding:8px 10px}
+ .basket-toggle{font-size:14px;padding:8px 10px}
+ .basket-panel{right:0;top:calc(100% + 6px);padding:12px}
+ .basket-item{grid-template-columns:54px minmax(0,1fr) auto;gap:7px}
+ .basket-item img{width:54px;height:50px}
+ .basket-actions{grid-template-columns:1fr}
+ .choose-current-button{font-size:14px;padding:9px 14px}
+}

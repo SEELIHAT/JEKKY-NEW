@@ -14,45 +14,61 @@
  
  <link rel="stylesheet" href="jekky.css">
 <link rel ="shortcut icon" href=".\image\jekkytiga.svg" width="100"height="100" type="image/png">
-<script src="face.js" defer></script>
-<script src="jekky.js" defer></script>	
+
+
  
+  <link rel="stylesheet" href="basket.css">
 </head>
 
 <body>
     <header class="header">
         <h1 class ="hfirst">Женские поляризационные солнцезащитные очки</h1>
-        <nav>
-            
-            <div class="dropdown">
-                <button class="button">Меню</button>
-   <div class="dropdown-content" > 
-              
-    <a  href="index.html">Главная страница</a>
-    <a  href="Jekky-shop.html">Hаш магазин</a>
-    <a  href="Choose-on-the-face.html">Программа выбора очков на лице</a>
-    <a  href="catalog-sunglasses-jekky.html">Программа выбора очков в каталоге</a>
-   
-    <a  href="color-lens-hera.html">Контактные линзы цветные"Hera"</a>
-    <a  href="Contact-lens-soflens.html">Контактные линзы "Soflens"</a>
-    <a  href="accesuares-for-sunglasses-and-lens.html">Аксессуары</a>
-    <a  href="accesuares-for-sunglasses-and-lens.html#water">Вода для линз</a>
-             
-          </div>
-          </div>
-          <div  class="dropdown">
-            <button style="width:120px;" class="button">Сделать заказ</button>
-<div class="dropdown-content" > 
-    <a  href="Choose-on-the-face.html">Программа выбора очков на лице</a>
-    <a  href="catalog-sunglasses-jekky.html">Программа выбора очков в каталоге</a>
-    <a  href="color-lens-hera.html">Контактные линзы цветные"Hera"</a>
-    <a  href="Contact-lens-soflens.html">Контактные линзы "Soflens"</a> 
-               
-</div>
-</div>
-              <a href="#contacts"><button style="padding:9px;" class="button">Контакты</button></a>
-</div>
-        </nav>
+        <nav class="jekky-nav">
+  <div class="dropdown">
+    <button class="button" type="button">Меню</button>
+    <div class="dropdown-content">
+      <a href="index.html">Главная страница</a>
+      <a href="Jekky-shop.html">Наш магазин</a>
+      <a href="Choose-on-the-face.html">Программа выбора очков на лице</a>
+      <a href="catalog-sunglasses-jekky.html">Программа выбора очков в каталоге</a>
+      <a href="color-lens-hera.html">Контактные линзы цветные «Hera»</a>
+      <a href="Contact-lens-soflens.html">Контактные линзы «Soflens»</a>
+      <a href="accesuares-for-sunglasses-and-lens.html">Аксессуары</a>
+      <a href="accesuares-for-sunglasses-and-lens.html#water">Вода для линз</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button style="width:120px;" class="button" type="button">Сделать заказ</button>
+    <div class="dropdown-content">
+      <a href="Choose-on-the-face.html">Программа выбора очков на лице</a>
+      <a href="catalog-sunglasses-jekky.html">Программа выбора очков в каталоге</a>
+      <a href="color-lens-hera.html">Контактные линзы цветные «Hera»</a>
+      <a href="Contact-lens-soflens.html">Контактные линзы «Soflens»</a>
+    </div>
+  </div>
+  <button type="button" id="basket-toggle" class="basket-toggle" aria-expanded="false" aria-controls="basket-panel">
+    <span aria-hidden="true">🛒</span> Корзина <span id="basket-count" class="basket-count">0</span>
+  </button>
+  <section id="basket-panel" class="basket-panel" hidden aria-label="Корзина">
+    <div class="basket-panel-head">
+      <h3>Ваша корзина</h3>
+      <button type="button" id="basket-close" class="basket-close" aria-label="Закрыть корзину">×</button>
+    </div>
+    <div id="basket-items"><p class="basket-empty">Корзина пока пуста. Выберите понравившиеся очки.</p></div>
+    <div class="basket-total-line"><strong>Итого:</strong> <strong id="basket-total">0 руб.</strong></div>
+    <form id="basket-order-form">
+      <label for="customer-name">Ваше имя</label>
+      <input id="customer-name" name="name" type="text" maxlength="100" placeholder="Как к вам обращаться">
+      <label for="customer-contact">Телефон или email для связи</label>
+      <input id="customer-contact" name="contact" type="text" maxlength="160" placeholder="+7... или email">
+      <div class="basket-actions">
+        <button type="button" id="send-whatsapp" class="basket-action whatsapp-action">Отправить в WhatsApp</button>
+        <button type="submit" id="send-email" class="basket-action email-action">Отправить на email</button>
+      </div>
+      <p id="basket-status" class="basket-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</nav>
       </header>
 
       <aside class="asidewoman">
@@ -179,28 +195,15 @@ document.getElementById("huilo").addEventListener("click", function() {
         button.textContent = "Читать";  // Change button text back to "Toggle Text"
     }
 }); </script>
-<script>function sendMessageToWhatsApp(phoneNumber, textElementId) {
-    // Get the text content from the element with the provided id
-    const textContent = document.getElementById(textElementId).textContent;
-    
-    // WhatsApp URL with message
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(textContent)}`;
-    
-    // Redirect to the WhatsApp URL
-    window.open(whatsappUrl, '_blank');
-}
-</script>
-
-
 <p class="cranch ptop"><br> <span>1.</span>Сначала вы нажимаете кнопку сверху и слева <span>Выбрать файл</span>.В форме под текстом<br>
-<span>2.</span>Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.<br>
+    <span>2.</span>Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.<br>
+    <span>3.</span>Нажмите на кнопку <span>В центр</span> для того, чтобы уменьшить  и отцентровать фото .<br>
+    <span>4.</span>Подстройте своё фото под рамку соответсвующего размера головы нажимая кнопки расположенные под фотографией<br> <span>Больше </span>&nbsp;<span>Меньше </span>&nbsp;<span>Право</span>&nbsp; <span>Лево</span>&nbsp; <span>Ниже</span>&nbsp;<span>Выше</span>&nbsp;.<br>
+    <span> 5.</span> Далее нажимайте <span>Слудущий</span> или <span>Преведущий</span>,чтобы подобрать очки нужного размера и фассона . <br>
+    <span>6.</span> Нажмите кнопку «Выбрать эти очки», чтобы добавить модель в корзину. <br>
 
-<span>3.</span>Подстройте своё фото под рамку соответсвующего размера головы нажимая кнопки расположенные под фотографией<br> <span>Больше </span>&nbsp;<span>Меньше </span>&nbsp;<span>Право</span>&nbsp; <span>Лево</span>&nbsp; <span>Ниже</span>&nbsp;<span>Выше</span>&nbsp;.<br>
-<span> 4.</span> Далее нажимайте <span>Слудущий</span> или <span>Преведущий</span>,чтобы подобрать очки нужного размера и фассона . <br>
-<span>5.</span> Кликните на фото ,если очки вам понравились .  <br>
-
-<span>6.</span>Вы зайдете в WhatsApp. Там вы сможете написать всю информацию о понравившихся очках и нажать «Отправить» .<br>
-<span>7.</span> Когда мы освободимся, мы отправим вам сообщение или позвоним, чтобы узнать и уточнить время доставки.<br>
+        <span>7.</span> Откройте корзину, проверьте заказ и отправьте его через WhatsApp или электронную почту. <br>
+            <span>8.</span> Когда мы освободимся, мы отправим вам сообщение или позвоним, чтобы узнать и уточнить время доставки.<br>
     Хорошего дня и удачных покупок.<br></p></section>
 
 <section class="blockoverfooter">
@@ -213,97 +216,40 @@ document.getElementById("huilo").addEventListener("click", function() {
             <div class="facec">
 
                 <div id="carousel-container">
-                    <input class="pp" type="file" id="background-input" accept="image" onchange="uploadBackground()">
-                    <div id="image-container" class="hit">
-                        <!-- Add your images here -->
-                        <img class="carousel-image" id="photo1" src=".\image\Image1.png" alt="Image 1"
-                        onclick="sendMessageToWhatsApp('+79146209617', 'order1')">
-                       
-                            <img class="carousel-image" id="photo1" src=".\image\womanspolar (1).png" alt="Image 7001"
-                                onclick="addToBasket('order1', 'photo1')">
-                                <img class="carousel-image" id="photo2" src=".\image\womanspolar (2).png" alt="Image 3"
-                        onclick="addToBasket('order2', 'photo2')">
-                         <img class="carousel-image" id="photo3" src=".\image\womanspolar (3).png" alt="Image 4"
-                         onclick="addToBasket('order3', 'photo3')">
-                        <img class="carousel-image" id="photo7004" src=".\image\womanspolar (4).png" alt="Image 5"
-                            onclick="addToBasket('order4', 'photo4')">
-                        <img class="carousel-image" id="photo5" src=".\image\womanspolar (5).png" alt="Image 6"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order6')">
-                        <img class="carousel-image" id="photo6" src=".\image\womanspolar (6).png" alt="Image 7"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order7')">
-                        <img class="carousel-image" id="photo7" src=".\image\womanspolar (7).png" alt="Image 8"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order8')">
-                        <img class="carousel-image" id="photo8" src=".\image\womanspolar (8).png" alt="Image 9"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order9')">
-                        <img class="carousel-image" id="photo9" src=".\image\womanspolar (9).png" alt="Image 10"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order10')">
-                        <img class="carousel-image" id="photo10" src=".\image\womanspolar (10).png" alt="Image 11"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order11')">    
-                        <img class="carousel-image" id="photo11" src=".\image\womanspolar (11).png" alt="Image 12"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order12')">
-                        <img class="carousel-image" id="photo12" src=".\image\womanspolar (12).png" alt="Image 13"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order13')">
-                        <img class="carousel-image" id="photo13" src=".\image\womanspolar (13).png" alt="Image 14"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order14')">
-                        <img class="carousel-image" id="photo14" src=".\image\womanspolar (14).png" alt="Image 15"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order15')">
-                        <img class="carousel-image" id="photo15" src=".\image\womanspolar (15).png" alt="Image 16"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order16')">   
-                        <img class="carousel-image" id="photo16" src=".\image\womanspolar (16).png" alt="Image 17"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order17')">
-                        <img class="carousel-image" id="photo17" src=".\image\womanspolar (17).png" alt="Image 18"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order18')">   
-                        <img class="carousel-image" id="photo18" src=".\image\womanspolar (18).png" alt="Image 19"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order19')">
-                        <img class="carousel-image" id="photo19" src=".\image\womanspolar (19).png" alt="Image 20"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order20')">
-                        <img class="carousel-image" id="photo20" src=".\image\womanspolar (20).png" alt="Image 21"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order21')">
-                        <img class="carousel-image" id="photo21" src=".\image\womanspolar (21).png" alt="Image 22"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order22')">   
-                        <img class="carousel-image" id="photo22" src=".\image\womanspolar (22).png" alt="Image 23"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order23')">
-                        <img class="carousel-image" id="photo23" src=".\image\womanspolar (23).png" alt="Image 24"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order24')">   
-                        <img class="carousel-image" id="photo24" src=".\image\womanspolar (24).png" alt="Image 25"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order25')">
-                        <img class="carousel-image" id="photo25" src=".\image\womanspolar (25).png" alt="Image 26"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order26')">
-                        <img class="carousel-image" id="photo26" src=".\image\womanspolar (26).png" alt="Image 27"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order27')"> 
-                            <p id="order1" >Номер заказа : 1 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p> 
-        Choose
-    </button>
-                            <p id="order2" >Номер заказа : 2 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order3">Номер заказа : 3 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order4">Номер заказа : 4 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order5">Номер заказа : 5 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order6">Номер заказа : 6 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p> 
-                            <p id="order7">Номер заказа : 7 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order8">Номер заказа : 8 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order1" >Номер заказа : 9 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order2" >Номер заказа : 10 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order3">Номер заказа : 11 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order4">Номер заказа : 12 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order5">Номер заказа : 13 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order6">Номер заказа : 14 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p> 
-                            <p id="order7">Номер заказа : 15 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order8">Номер заказа : 16 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order1" >Номер заказа : 17 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order2" >Номер заказа : 18 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order3">Номер заказа : 19 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order4">Номер заказа : 20 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order5">Номер заказа : 21 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order6">Номер заказа : 22 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p> 
-                            <p id="order7">Номер заказа : 23 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order8">Номер заказа : 24 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order1" >Номер заказа : 25 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order2" >Номер заказа : 26 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            
-                        </div>
-                        
-    
-                    </div>
+  <input class="pp" type="file" id="background-input" accept="image/*" onchange="uploadBackground()">
+  <div id="image-container" class="hit">
+                        <img class="carousel-image" id="photo1" src="./image/womanspolar (1).png" alt="Женские поляризованные очки — модель 1" loading="lazy">
+                        <img class="carousel-image" id="photo2" src="./image/womanspolar (2).png" alt="Женские поляризованные очки — модель 2" loading="lazy">
+                        <img class="carousel-image" id="photo3" src="./image/womanspolar (3).png" alt="Женские поляризованные очки — модель 3" loading="lazy">
+                        <img class="carousel-image" id="photo4" src="./image/womanspolar (4).png" alt="Женские поляризованные очки — модель 4" loading="lazy">
+                        <img class="carousel-image" id="photo5" src="./image/womanspolar (5).png" alt="Женские поляризованные очки — модель 5" loading="lazy">
+                        <img class="carousel-image" id="photo6" src="./image/womanspolar (6).png" alt="Женские поляризованные очки — модель 6" loading="lazy">
+                        <img class="carousel-image" id="photo7" src="./image/womanspolar (7).png" alt="Женские поляризованные очки — модель 7" loading="lazy">
+                        <img class="carousel-image" id="photo8" src="./image/womanspolar (8).png" alt="Женские поляризованные очки — модель 8" loading="lazy">
+                        <img class="carousel-image" id="photo9" src="./image/womanspolar (9).png" alt="Женские поляризованные очки — модель 9" loading="lazy">
+                        <img class="carousel-image" id="photo10" src="./image/womanspolar (10).png" alt="Женские поляризованные очки — модель 10" loading="lazy">
+                        <img class="carousel-image" id="photo11" src="./image/womanspolar (11).png" alt="Женские поляризованные очки — модель 11" loading="lazy">
+                        <img class="carousel-image" id="photo12" src="./image/womanspolar (12).png" alt="Женские поляризованные очки — модель 12" loading="lazy">
+                        <img class="carousel-image" id="photo13" src="./image/womanspolar (13).png" alt="Женские поляризованные очки — модель 13" loading="lazy">
+                        <img class="carousel-image" id="photo14" src="./image/womanspolar (14).png" alt="Женские поляризованные очки — модель 14" loading="lazy">
+                        <img class="carousel-image" id="photo15" src="./image/womanspolar (15).png" alt="Женские поляризованные очки — модель 15" loading="lazy">
+                        <img class="carousel-image" id="photo16" src="./image/womanspolar (16).png" alt="Женские поляризованные очки — модель 16" loading="lazy">
+                        <img class="carousel-image" id="photo17" src="./image/womanspolar (17).png" alt="Женские поляризованные очки — модель 17" loading="lazy">
+                        <img class="carousel-image" id="photo18" src="./image/womanspolar (18).png" alt="Женские поляризованные очки — модель 18" loading="lazy">
+                        <img class="carousel-image" id="photo19" src="./image/womanspolar (19).png" alt="Женские поляризованные очки — модель 19" loading="lazy">
+                        <img class="carousel-image" id="photo20" src="./image/womanspolar (20).png" alt="Женские поляризованные очки — модель 20" loading="lazy">
+                        <img class="carousel-image" id="photo21" src="./image/womanspolar (21).png" alt="Женские поляризованные очки — модель 21" loading="lazy">
+                        <img class="carousel-image" id="photo22" src="./image/womanspolar (22).png" alt="Женские поляризованные очки — модель 22" loading="lazy">
+                        <img class="carousel-image" id="photo23" src="./image/womanspolar (23).png" alt="Женские поляризованные очки — модель 23" loading="lazy">
+                        <img class="carousel-image" id="photo24" src="./image/womanspolar (24).png" alt="Женские поляризованные очки — модель 24" loading="lazy">
+                        <img class="carousel-image" id="photo25" src="./image/womanspolar (25).png" alt="Женские поляризованные очки — модель 25" loading="lazy">
+                        <img class="carousel-image" id="photo26" src="./image/womanspolar (26).png" alt="Женские поляризованные очки — модель 26" loading="lazy">
+  </div>
+  <div class="choose-product-area">
+    <button type="button" id="choose-current-button" class="choose-current-button">Выбрать эти очки</button>
+    <span id="choose-feedback" role="status" aria-live="polite"></span>
+  </div>
+</div>
                     <div style="text-align:center;margin-top:10px;">
                         <div class="nextbut"><button class="prev" id="prevBtn" onclick="changeSlide(-1)">Предыдущий</button>
                         <button class="next" id="nextBtn" onclick="changeSlide(1)">Следующий</button></div>
@@ -402,8 +348,8 @@ document.getElementById("huilo").addEventListener("click", function() {
                     <div class="slide"><img class="slideimg"  src=".\image\pl5001 (4).png" alt="Slide 5"></div>
                     <div class="slide"><img class="slideimg"  src=".\image\pl5001 (5).png" alt="Slide 6"></div>
                     </div></div>
-              
-             
+  <script src="jekky.js" defer></script>
+  <script src="basket.js" defer></script>
 </body>
 
 </html>
