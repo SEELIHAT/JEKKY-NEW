@@ -22,7 +22,22 @@
 <body class="cage">
     <header class="header">
         <h1 class ="hfirst">Классические женские солнцезащитные очки</h1>
-        <nav>
+        <nav><div class="seconddown"id="basket">
+
+    <h3 class="button">🛒 Your Basket</h3>
+<div class="seconddown-content">
+    <div id="basket-items"></div>
+
+    <p id="basket-total">Total: 0 руб.</p>
+
+    <button onclick="sendBasketToWhatsApp('+79146209617')">
+        Send order to WhatsApp
+    </button>
+     <button onclick="sendBasketToEmail()">
+            Send order to Email
+        </button>
+
+</div></div>
             <div class="dropdown">
                 <button class="button">Меню</button>
    <div class="dropdown-content" > 
@@ -182,50 +197,29 @@ button.textContent = "Читать";  // Change button text back to "Toggle Text
                         <!-- Add your images here -->
                         <img class="carousel-image" id="photo1" src=".\image\Image1.png" alt="Image 1"
                         >
-                        <img class="carousel-image" id="photo27" src=".\image\womanschoose (1).png" alt="Image 27"
-                        onclick="sendMessageToWhatsApp('+79146209617', 'order27')">
-                        <img class="carousel-image" id="photo28" src=".\image\womanschoose (2).png" alt="Image 28"
-                        onclick="sendMessageToWhatsApp('+79146209617', 'order28')">
-                         <img class="carousel-image" id="photo29" src=".\image\womanschoose (3).png" alt="Image 29"
-                         onclick="sendMessageToWhatsApp('+79146209617', 'order29')">
+                       <div class="product"> <img class="carousel-image" id="photo27" src=".\image\womanschoose (1).png" alt="Image 27"
+                        >
+                        <button style="position:absolute; z-index:5000; top:35px; font-size: 25px;color:black; " onclick="addToBasket('order27', 'photo27')">Choose</button></div>
+       
+
+                         <div class="product"><img class="carousel-image" id="photo28" src=".\image\womanschoose (2).png" alt="Image 28"
+                        ><button style="position:absolute; z-index:5000; top:35px; font-size: 25px;color:black; " onclick="addToBasket('order28', 'photo28')">
+        Choose
+    </button></div>
+                         <div class="product"> <img class="carousel-image" id="photo29" src=".\image\womanschoose (3).png" alt="Image 29"
+                         ><button style="position:absolute; z-index:5000; top:35px; font-size: 25px;color:black; " onclick="addToBasket('order29', 'photo29')">
+        Choose
+    </button></div>
                         <img class="carousel-image" id="photo30" src=".\image\womanschoose (4).png" alt="Image 30"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order30')">
+                            ><button style="position:absolute; z-index:5000; top:35px; font-size: 25px;color:black; " onclick="addToBasket('order30', 'photo30')">Choose</button>
                         <img class="carousel-image" id="photo31" src=".\image\womanschoose (5).png" alt="Image 31"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order31')">
+                            ><button style="position:absolute; z-index:5000; top:35px;font-size: 25px;color:black; " onclick="addToBasket('order30', 'photo31')">
+        Choose
+    </button>
                         <img class="carousel-image" id="photo32" src=".\image\womanschoose (6).png" alt="Image 32"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order32')">
-                        <img class="carousel-image" id="photo33" src=".\image\womanschoose (7).png" alt="Image 33"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order33')">
-                        <img class="carousel-image" id="photo35" src=".\image\womanschoose (8).png" alt="Image 35"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order35')">
-                        <img class="carousel-image" id="photo36" src=".\image\womanschoose (9).png" alt="Image 36"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order36')">
-                        <img class="carousel-image" id="photo37" src=".\image\womanschoose (10).png" alt="Image 37"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order37')">    
-                        <img class="carousel-image" id="photo38" src=".\image\womanschoose (11).png" alt="Image 38"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order38')">
-                        <img class="carousel-image" id="photo39" src=".\image\womanschoose (12).png" alt="Image 39"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order39')">
-                        <img class="carousel-image" id="photo40" src=".\image\womanschoose (13).png" alt="Image 40"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order40')">
-                        <img class="carousel-image" id="photo41" src=".\image\womanschoose (14).png" alt="Image 41"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order41')">
-                        <img class="carousel-image" id="photo42" src=".\image\womanschoose (15).png" alt="Image 42"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order42')">   
-                        <img class="carousel-image" id="photo43" src=".\image\womanschoose (16).png" alt="Image 43"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order43')">
-                        <img class="carousel-image" id="photo44" src=".\image\womanschoose (17).png" alt="Image 44"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order44')">   
-                        <img class="carousel-image" id="photo45" src=".\image\womanschoose (18).png" alt="Image 45"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order45')">
-                        <img class="carousel-image" id="photo46" src=".\image\womanschoose (19).png" alt="Image 46"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order46')">
-                        <img class="carousel-image" id="photo47" src=".\image\womanschoose (20).png" alt="Image 47"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order47')">
-                        <img class="carousel-image" id="photo48" src=".\image\womanschoose (21).png" alt="Image 48"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order48')">   
-                        <img class="carousel-image" id="photo49" src=".\image\womanschoose (22).png" alt="Image 49"
-                            onclick="sendMessageToWhatsApp('+79146209617', 'order49')">
+                            ><button style="position:absolute; z-index:3000; top:35px;font-size: 25px;color:black;;  " onclick="addToBasket('order31', 'photo31')">
+        Choose
+    </button>
                        
                             <p id="order27" >Номер заказа : 27 Женские солнцезащитные очки. Цена 2700 руб.Мы надеемся, что вы быстро ответите.</p>
                             <p id="order28" >Номер заказа : 28 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
@@ -233,28 +227,13 @@ button.textContent = "Читать";  // Change button text back to "Toggle Text
                             <p id="order30">Номер заказа : 30 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
                             <p id="order31">Номер заказа : 31 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
                             <p id="order32">Номер заказа : 32 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p> 
-                            <p id="order33">Номер заказа : 33 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order34">Номер заказа : 34 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order35" >Номер заказа : 35 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order36" >Номер заказа : 36 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order37">Номер заказа : 37 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order38">Номер заказа : 38 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order39">Номер заказа : 39 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order40">Номер заказа : 40 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p> 
-                            <p id="order41">Номер заказа : 41 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order42">Номер заказа : 42 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order43" >Номер заказа : 43 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order44" >Номер заказа : 44 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order45">Номер заказа : 45 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order46">Номер заказа : 46 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order47">Номер заказа : 47 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order48">Номер заказа : 48 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p> 
-                            <p id="order49">Номер заказа : 49 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
+                            
                             
                         </div>
                         
     
                     </div>
+
                     <div style="text-align:center;margin-top:10px;">
                         <div class="nextbut"><button class="prev" id="prevBtn" onclick="changeSlide(-1)">Предыдущий</button>
                         <button class="next" id="nextBtn" onclick="changeSlide(1)">Следующий</button></div>
