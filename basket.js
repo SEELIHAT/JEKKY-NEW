@@ -1,7 +1,39 @@
 (() => {
   "use strict";
 
-  const PRICE = 1350;
+
+// ======================================
+// J E K K Y   P R I C E   S E T T I N G S
+// ======================================
+
+function priceFor(model) {
+
+    if (model >= 1 && model <= 24) {
+        return 1250;
+
+    } else if (model >= 25 && model <= 55) {
+        return 1250;
+
+    } else if (model >= 56 && model <= 78) {
+        return 1550;
+
+    } else if (model >= 79 && model <= 100) {
+        return 1800;
+
+    } else if (model >= 101 && model <= 120) {
+        return 2000;
+
+    } else if (model >= 121 && model <= 150) {
+        return 2200;
+
+    } else if (model >= 151 && model <= 200) {
+        return 2500;
+
+    } else {
+        return 2800;
+    }
+}
+
   const STORAGE_KEY = "jekky_womens_sunglasses_basket_v1";
   const WHATSAPP_NUMBER = "79315908599";
   const $ = (id) => document.getElementById(id);
@@ -26,7 +58,10 @@
   function render() {
     const count = $("basket-count");
     const list = $("basket-items");
-    const total = basket.reduce((sum, item) => sum + item.qty * PRICE, 0);
+    const total = basket.reduce(
+    (sum, item) => sum + item.qty * priceFor(item.model),
+    0
+);
     if (count) count.textContent = String(totalCount());
     if ($("basket-total")) $("basket-total").textContent = total.toLocaleString("ru-RU") + " руб.";
     if (!list) return;
@@ -50,7 +85,10 @@
       const name = document.createElement("strong");
       name.textContent = `Женские очки — модель ${item.model}`;
       const price = document.createElement("span");
-      price.textContent = `${PRICE.toLocaleString("ru-RU")} руб. × ${item.qty} = ${(PRICE * item.qty).toLocaleString("ru-RU")} руб.`;
+     const unitPrice = priceFor(item.model);
+
+price.textContent =
+    `${unitPrice.toLocaleString("ru-RU")} руб. × ${item.qty} = ${(unitPrice * item.qty).toLocaleString("ru-RU")} руб.`;
       info.append(name, price);
 
       const remove = document.createElement("button");
@@ -95,15 +133,27 @@
     if (toggle) toggle.classList.add("basket-has-items");
   }
 
-  function buildOrderText() {
-    const lines = basket.map(item =>
-      `Модель ${item.model} — ${item.qty} шт. × ${PRICE} руб. = ${item.qty * PRICE} руб.`
+ 
+function buildOrderText() {
+
+    const lines = basket.map(item => {
+        const price = priceFor(item.model);
+        const lineTotal = price * item.qty;
+
+        return `Модель ${item.model} — ${item.qty} шт. × ${price} руб. = ${lineTotal} руб.`;
+    });
+
+    const total = basket.reduce(
+        (sum, item) => sum + item.qty * priceFor(item.model),
+        0
     );
-    const total = basket.reduce((sum, item) => sum + item.qty * PRICE, 0);
+
     const name = $("customer-name")?.value.trim() || "Не указано";
     const contact = $("customer-contact")?.value.trim() || "Не указан";
+
     return `Здравствуйте! Хочу оформить заказ в Jekky.\n\n${lines.join("\n")}\n\nИтого: ${total} руб.\nИмя: ${name}\nКонтакт: ${contact}`;
-  }
+}
+
 
   function openBasket() {
     const panel = $("basket-panel");

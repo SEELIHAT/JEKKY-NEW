@@ -29,7 +29,35 @@ if (!is_array($items) || count($items) < 1 || count($items) > 26) {
     respond(422, ['ok' => false, 'message' => 'Your basket is empty or invalid.']);
 }
 
-$unitPrice = 1350;
+
+function priceForModel(int $model): int {
+
+    if ($model >= 1 && $model <= 24) {
+        return 1350;
+
+    } elseif ($model >= 25 && $model <= 55) {
+        return 1350;
+
+    } elseif ($model >= 56 && $model <= 78) {
+        return 1550;
+
+    } elseif ($model >= 79 && $model <= 100) {
+        return 1800;
+
+    } elseif ($model >= 101 && $model <= 120) {
+        return 2000;
+
+    } elseif ($model >= 121 && $model <= 150) {
+        return 2200;
+
+    } elseif ($model >= 151 && $model <= 200) {
+        return 2500;
+
+    } else {
+        return 2800;
+    }
+}
+
 $lines = [];
 $total = 0;
 foreach ($items as $item) {
@@ -38,9 +66,12 @@ foreach ($items as $item) {
     if ($model === false || $model < 1 || $model > 26 || $qty === false || $qty < 1 || $qty > 20) {
         respond(422, ['ok' => false, 'message' => 'One of the selected products is invalid.']);
     }
-    $lineTotal = $unitPrice * $qty;
-    $total += $lineTotal;
-    $lines[] = "Модель {$model}: {$qty} шт. × {$unitPrice} руб. = {$lineTotal} руб.";
+     $unitPrice = priceForModel($model);
+
+$lineTotal = $unitPrice * $qty;
+$total += $lineTotal;
+
+$lines[] = "Модель {$model}: {$qty} шт. × {$unitPrice} руб. = {$lineTotal} руб.";
 }
 
 $configFile = __DIR__ . '/smtp-settings.php';
