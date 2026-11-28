@@ -3,7 +3,7 @@
 
   const PRICE = 1350;
   const STORAGE_KEY = "jekky_womens_sunglasses_basket_v1";
-  const WHATSAPP_NUMBER = "79146209617";
+  const WHATSAPP_NUMBER = "79315908599";
   const $ = (id) => document.getElementById(id);
 
   let basket = [];
@@ -41,7 +41,7 @@
       const row = document.createElement("div");
       row.className = "basket-item";
       const img = document.createElement("img");
-      img.src = `./image/womanspolar (${item.model}).png`;
+      img.src = `./image/womans(${item.model}).png`;
       img.alt = `Модель ${item.model}`;
       img.loading = "lazy";
 
@@ -175,7 +175,7 @@
   window.addToBasket = function(orderId, photoId) {
     const match = String(orderId || "").match(/\d+/);
     const model = match ? Number(match[0]) : currentModel();
-    if (model >= 1 && model <= 26) {
+    if (model >= 1 && model <= 126) {
       window.currentSlide = model;
       addCurrentModel();
     }

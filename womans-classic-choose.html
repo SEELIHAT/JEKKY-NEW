@@ -1,102 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta name="description" content="Примерьте классические женские солнцезащитные очки онлайн! Найдите свой стиль с помощью виртуальной примерки очков и оцените, как они будут смотреться на вашем лице.">
-    <meta name="keywords" content="виртуальная примерка очков, женские солнцезащитные очки, классические очки для женщин, примерка очков онлайн, очки для женщин Россия">
-    
+    <meta name="description" content="Попробуйте женские поляризованные солнцезащитные очки онлайн! Найдите идеальные очки с помощью виртуальной примерки, защищающие от бликов и создающие стильный образ.">
+    <meta name="keywords" content="виртуальная примерка очков, женские поляризованные очки, солнцезащитные очки с защитой, примерка очков онлайн, поляризованные очки для женщин Россия">
+     
   <meta name="author" content="Евгений">
   
   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Виртуальная Примерка Классических Женских Очков - Элегантный Стиль Онлайн</title>
+    <title>Виртуальная Примерка Поляризованных Женских Очков - Найдите Свой Стиль</title>
 
  
  <link rel="stylesheet" href="jekky.css">
 <link rel ="shortcut icon" href=".\image\jekkytiga.svg" width="100"height="100" type="image/png">
-<script src="face.js" defer></script>
-<script src="jekky.js" defer></script>	
+
+
  
+  <link rel="stylesheet" href="basket.css">
 </head>
 
-<body class="cage">
+<body>
     <header class="header">
-        <h1 class ="hfirst">Классические женские солнцезащитные очки</h1>
-        <nav><div class="seconddown"id="basket">
-
-    <h3 class="button">🛒 Your Basket</h3>
-<div class="seconddown-content">
-    <div id="basket-items"></div>
-
-    <p id="basket-total">Total: 0 руб.</p>
-
-    <button onclick="sendBasketToWhatsApp('+79146209617')">
-        Send order to WhatsApp
-    </button>
-     <button onclick="sendBasketToEmail()">
-            Send order to Email
-        </button>
-
-</div></div>
-            <div class="dropdown">
-                <button class="button">Меню</button>
-   <div class="dropdown-content" > 
-              
-    <a  href="index.html">Главная страница</a>
-    <a  href="Jekky-shop.html">Hаш магазин</a>
-    <a  href="Choose-on-the-face.html">Программа выбора очков на лице</a>
-    <a  href="catalog-sunglasses-jekky.html">Программа выбора очков в каталоге</a>
-   
-    <a  href="color-lens-hera.html">Контактные линзы цветные"Hera"</a>
-    <a  href="Contact-lens-soflens.html">Контактные линзы "Soflens"</a>
-    <a  href=accesuares-for-sunglasses-and-lens.html"">Аксессуары</a>
-    <a  href="accesuares-for-sunglasses-and-lens.html#water">Вода для линз</a> 
-             
-          </div>
-          </div>
-          <div  class="dropdown">
-            <button style="width:120px;" class="button">Сделать заказ</button>
-<div class="dropdown-content" > 
-    <a  href="Choose-on-the-face.html">Программа выбора очков на лице</a>
-    <a  href="catalog-sunglasses-jekky.html">Программа выбора очков в каталоге</a>
-    <a  href="color-lens-hera.html">Контактные линзы цветные"Hera"</a>
-    <a  href="Contact-lens-soflens.html">Контактные линзы "Soflens"</a> 
-               
-</div>
-</div>
-              <a href="#contacts"><button style="padding:9px;" class="button">Контакты</button></a>
-</div>
-        </nav>
+        <h1 class ="hfirst">Женские поляризационные солнцезащитные очки</h1>
+        <nav class="jekky-nav">
+  <div class="dropdown">
+    <button class="button" type="button">Меню</button>
+    <div class="dropdown-content">
+      <a href="index.html">Главная страница</a>
+      <a href="Jekky-shop.html">Наш магазин</a>
+      <a href="Choose-on-the-face.html">Программа выбора очков на лице</a>
+      <a href="catalog-sunglasses-jekky.html">Программа выбора очков в каталоге</a>
+      <a href="color-lens-hera.html">Контактные линзы цветные «Hera»</a>
+      <a href="Contact-lens-soflens.html">Контактные линзы «Soflens»</a>
+      <a href="accesuares-for-sunglasses-and-lens.html">Аксессуары</a>
+      <a href="accesuares-for-sunglasses-and-lens.html#water">Вода для линз</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button style="width:120px;" class="button" type="button">Сделать заказ</button>
+    <div class="dropdown-content">
+      <a href="Choose-on-the-face.html">Программа выбора очков на лице</a>
+      <a href="catalog-sunglasses-jekky.html">Программа выбора очков в каталоге</a>
+      <a href="color-lens-hera.html">Контактные линзы цветные «Hera»</a>
+      <a href="Contact-lens-soflens.html">Контактные линзы «Soflens»</a>
+    </div>
+  </div>
+  <button type="button" id="basket-toggle" class="basket-toggle" aria-expanded="false" aria-controls="basket-panel">
+    <span aria-hidden="true">🛒</span> Корзина <span id="basket-count" class="basket-count">0</span>
+  </button>
+  <section id="basket-panel" class="basket-panel" hidden aria-label="Корзина">
+    <div class="basket-panel-head">
+      <h3>Ваша корзина</h3>
+      <button type="button" id="basket-close" class="basket-close" aria-label="Закрыть корзину">×</button>
+    </div>
+    <div id="basket-items"><p class="basket-empty">Корзина пока пуста. Выберите понравившиеся очки.</p></div>
+    <div class="basket-total-line"><strong>Итого:</strong> <strong id="basket-total">0 руб.</strong></div>
+    <form id="basket-order-form">
+      <label for="customer-name">Ваше имя</label>
+      <input id="customer-name" name="name" type="text" maxlength="100" placeholder="Как к вам обращаться">
+      <label for="customer-contact">Телефон или email для связи</label>
+      <input id="customer-contact" name="contact" type="text" maxlength="160" placeholder="+7... или email">
+      <div class="basket-actions">
+        <button type="button" id="send-whatsapp" class="basket-action whatsapp-action">Отправить в WhatsApp</button>
+        <button type="submit" id="send-email" class="basket-action email-action">Отправить на email</button>
+      </div>
+      <p id="basket-status" class="basket-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</nav>
       </header>
 
-      
+      <aside class="asidewoman">
+        <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
+            <img src="./image/google.jpg" alt="Открыть Google">
+          </a>
+            <a href="https://yandex.ru/maps/-/CDRUnE1z">
+                <img src="./image/yandex map.png" alt="Открыть Яндекс Карты">
+                </a>
+        <a  href="https://wa.me/+79146209617">
+         <img src="./image/watson.jpg" alt="Отправить сообщение в WhatsApp"></a>
+       <a  href="tel:+79146209617"> 
+        <img src="./image/phone.jpg" alt="Позвонить по телефону"></a>
+    </aside>
     <main>   
      <section id="hop">
             <div class="hop">
-                <a class="hopp"href="https://rutube.ru/video/a2567abb28b8d51be25e0b8c73567a1b/" >
-                    <img class="video-container" src=".\image\womansunglasses.jpg" width="280" height="180" ></a>
-                    <div class=" dropdown"><div class="dropdown-content" > 
-                        <a  href="https://rutube.ru/video/436507b99b4a518c9a5b717706ff5e7c/">Видео об очках с оптикой</a>
-                        <a  href="dioptria-woman-catalog.html">Oптические очки для женщин в каталоге</a>
-                        <a  href="dioptria-woman-choose.html">Оптические очки для женщин выбирают по лицу.</a>
-                        <a  href="dioptria-men-catalog.html">Oптические очки для мужчины в каталоге</a>
-                        <a  href="dioptria-men-choose.html">Оптические очки для мужчины выбирают по лицу</a></div><img class="underhop  butto" src=".\image\dioptriajekkyneo.png" alt="Мужчины вместе с женщиной в оптических очках"></div>
-                        <div class=" dropdown"><div class="dropdown-content" >
-                            <a  href="https://rutube.ru/video/private/e20c8bd3a9eeea859ef89417fa1e3c8c/?p=T-Yar6TdkYmLEvSAaPyuAQ">Видео о контактных линзах Soflens one day</a>
-                            <a  href="https://rutube.ru/video/private/e31b9892653a0f10ea0322a2c82e94c7/?p=1qZNWpHxkN27Wet6wEsXZQ">Видео о контактных линзах Soflens 59</a>
-                            <a  href="https://rutube.ru/video/private/b894465525ff4774e1213c03950cd6a7/?p=QhW8OnqwgfKU5PS4gkqL6Q">Видео цветные контактные линзы "Hera"</a>
-                            <a  href="Contact-lens-soflens.html">Выбирать 
-                                 линзы "Soflens"</a>
-                            <a  href="color-lens-hera.html">Выбирать 
-                                цветные контактные линзы "Hera"</a>
-                            </div><img class="underhop  butto" src=".\image\contactlensjekkyneo.png" alt="Много контактных линз в коробке"></div>
-                            <div class=" dropdown"><div class="dropdown-content" > 
-                                <a  href="https://rutube.ru/video/a2567abb28b8d51be25e0b8c73567a1b/">Видео о классических солнцезащитных очках</a>
-                                <a  href="https://rutube.ru/video/e84efaa202391680fffc6574f880dc6f/">Видео о поляризационных очках</a>
-                                <a  href="catalog-sunglasses-jekky.html">Выбрать солнцезащитные очки в каталоге</a>
-                                <a  href="Choose-on-the-face.html">Выбрать солнцезащитные очки на лице</a>
-                                </div><img class="underhop  butto"src=".\image\sunglassejeka.png" alt="солнцезащитные очки летят вниз"></div>
-               
+                
+                <a class="hopp" href="https://rutube.ru/video/e84efaa202391680fffc6574f880dc6f/" >
+                    <img class="video-container" src=".\image\volkanoneo.png" width="280" height="180" alt="Красивая женщина стоит в солнечных очках на фоне двух вулканов" ></a>
+                </div>
+                <div class=" dropdown"><div class="dropdown-content" > 
+                    <a  href="https://rutube.ru/video/436507b99b4a518c9a5b717706ff5e7c/">Видео об очках с оптикой</a>
+                    <a  href="dioptria-woman-catalog.html">Oптические очки для женщин в каталоге</a>
+                    <a  href="dioptria-woman-choose.html">Оптические очки для женщин выбирают по лицу.</a>
+                    <a  href="dioptria-men-catalog.html">Oптические очки для мужчины в каталоге</a>
+                    <a  href="dioptria-men-choose.html">Оптические очки для мужчины выбирают по лицу</a></div><img class="underhop  butto" src=".\image\dioptriajekkyneo.png" alt="Мужчины вместе с женщиной в оптических очках"></div>
+                    <div class=" dropdown"><div class="dropdown-content" >
+                        <a  href="https://rutube.ru/video/private/e20c8bd3a9eeea859ef89417fa1e3c8c/?p=T-Yar6TdkYmLEvSAaPyuAQ">Видео о контактных линзах Soflens one day</a>
+                        <a  href="https://rutube.ru/video/private/e31b9892653a0f10ea0322a2c82e94c7/?p=1qZNWpHxkN27Wet6wEsXZQ">Видео о контактных линзах Soflens 59</a>
+                        <a  href="https://rutube.ru/video/private/b894465525ff4774e1213c03950cd6a7/?p=QhW8OnqwgfKU5PS4gkqL6Q">Видео цветные контактные линзы "Hera"</a>
+                        <a  href="Contact-lens-soflens.html">Выбирать 
+                             линзы "Soflens"</a>
+                        <a  href="color-lens-hera.html">Выбирать 
+                            цветные контактные линзы "Hera"</a>
+                        </div><img class="underhop  butto" src=".\image\contactlensjekkyneo.png" alt="Много контактных линз в коробке"></div>
+                        <div class=" dropdown"><div class="dropdown-content" > 
+                            <a  href="https://rutube.ru/video/a2567abb28b8d51be25e0b8c73567a1b/">Видео о классических солнцезащитных очках</a>
+                            <a  href="https://rutube.ru/video/e84efaa202391680fffc6574f880dc6f/">Видео о поляризационных очках</a>
+                            <a  href="catalog-sunglasses-jekky.html">Выбрать солнцезащитные очки в каталоге</a>
+                            <a  href="Choose-on-the-face.html">Выбрать солнцезащитные очки на лице</a>
+                            </div><img class="underhop  butto"src=".\image\sunglassejeka.png" alt="солнцезащитные очки летят вниз"></div>
+                
+       
     </section>
    <section class="inter">
       <p class="interp">
@@ -145,46 +161,45 @@
  которая подчеркнет вашу индивидуальность и станет неотъемлемой частью вашего повседневного образа.</p> 
  <button id="button" class="button" onclick="changeDisplay()">Press for read all</button></div>
 </section>
-<section class="padd"><h3 class="footerbig" id="chose">Инструкция по использованию нашей программы.</h3>
-   <div class="patt">
-        <div class="divpatt">
-
-<img src=".\image\womanlook.webp"><a class="butana butan" href="https://rutube.ru/video/private/9d2e935690d5a5d3021d16a7f1788228/?p=1HdC45VS4WqI5Src9JobGw">Смотреть</a>
-</div>
-<div class="textopens divpatt">
-<img src=".\image\manread.webp">
-<button class="butan"id="huilo">Читать</button>
+                    <section class="padd"><h3 class="footerbig" id="chose">Инструкция по использованию нашей программы.</h3>
+                       <div class="patt">
+                            <div class="divpatt">
+    
+        <img src=".\image\womanlook.webp"><a class="butana butan" href="https://rutube.ru/video/private/9d2e935690d5a5d3021d16a7f1788228/?p=1HdC45VS4WqI5Src9JobGw">Смотреть</a>
+    </div>
+    <div class="textopens divpatt">
+        <img src=".\image\manread.webp">
+        <button class="butan"id="huilo">Читать</button>
 </div>
 </div></div>
 <script>
 document.getElementById("huilo").addEventListener("click", function() {
-var cranchElement = document.querySelector(".cranch");
-var button = document.getElementById("huilo");
+    var cranchElement = document.querySelector(".cranch");
+    var button = document.getElementById("huilo");
 
-// Toggle display between 'block' and 'none'
-if (cranchElement.style.display === "none" || cranchElement.style.display === "") {
-cranchElement.style.display = "block";
-button.textContent = "Не читать";  // Change button text to "No Read"
-} else {
-cranchElement.style.display = "none";
-button.textContent = "Читать";  // Change button text back to "Toggle Text"
-}
+    // Toggle display between 'block' and 'none'
+    if (cranchElement.style.display === "none" || cranchElement.style.display === "") {
+        cranchElement.style.display = "block";
+        button.textContent = "Не читать";  // Change button text to "No Read"
+    } else {
+        cranchElement.style.display = "none";
+        button.textContent = "Читать";  // Change button text back to "Toggle Text"
+    }
 }); </script>
-
 <p class="cranch ptop"><br> <span>1.</span>Сначала вы нажимаете кнопку сверху и слева <span>Выбрать файл</span>.В форме под текстом<br>
-<span>2.</span>Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.<br>
+    <span>2.</span>Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.<br>
+    <span>3.</span>Нажмите на кнопку <span>В центр</span> для того, чтобы уменьшить  и отцентровать фото .<br>
+    <span>4.</span>Подстройте своё фото под рамку соответсвующего размера головы нажимая кнопки расположенные под фотографией<br> <span>Больше </span>&nbsp;<span>Меньше </span>&nbsp;<span>Право</span>&nbsp; <span>Лево</span>&nbsp; <span>Ниже</span>&nbsp;<span>Выше</span>&nbsp;.<br>
+    <span> 5.</span> Далее нажимайте <span>Слудущий</span> или <span>Преведущий</span>,чтобы подобрать очки нужного размера и фассона . <br>
+    <span>6.</span> Нажмите кнопку «Выбрать эти очки», чтобы добавить модель в корзину. <br>
 
-<span>3.</span>Подстройте своё фото под рамку соответсвующего размера головы нажимая кнопки расположенные под фотографией<br> <span>Больше </span>&nbsp;<span>Меньше </span>&nbsp;<span>Право</span>&nbsp; <span>Лево</span>&nbsp; <span>Ниже</span>&nbsp;<span>Выше</span>&nbsp;.<br>
-<span> 4.</span> Далее нажимайте <span>Слудущий</span> или <span>Преведущий</span>,чтобы подобрать очки нужного размера и фассона . <br>
-<span>5.</span> Кликните на фото ,если очки вам понравились .  <br>
+        <span>7.</span> Откройте корзину, проверьте заказ и отправьте его через WhatsApp или электронную почту. <br>
+            <span>8.</span> Когда мы освободимся, мы отправим вам сообщение или позвоним, чтобы узнать и уточнить время доставки.<br>
+    Хорошего дня и удачных покупок.<br></p></section>
 
-<span>6.</span>Вы зайдете в WhatsApp. Там вы сможете написать всю информацию о понравившихся очках и нажать «Отправить» .<br>
-<span>7.</span> Когда мы освободимся, мы отправим вам сообщение или позвоним, чтобы узнать и уточнить время доставки.<br>
-Хорошего дня и удачных покупок.<br></p></section>
-   
-    <section class="blockoverfooter">
-        <div class="facechoose"> 
-            <img class="picturesyoutube"src=".\image\accsesuar2neo.png" alt="">
+<section class="blockoverfooter">
+           <div class="facechoose"> 
+            <img class="picturesyoutube"src=".\image\accsesuar2neo.png" alt="accessuars">
             <a href="accesuares-for-sunglasses-and-lens.html" id="but2" class="but7" >Bыбрать аксессуары</a>
         </div>
 
@@ -192,39 +207,38 @@ button.textContent = "Читать";  // Change button text back to "Toggle Text
             <div class="facec">
 
                 <div id="carousel-container">
-                    <input class="pp" type="file" id="background-input" accept="image" onchange="uploadBackground()">
-                    <div id="image-container" class="hit">
-                        <!-- Add your images here -->
-                        <img class="carousel-image" id="photo1" src=".\image\Image1.png" alt="Image 1"
-                        >
-                        <img class="carousel-image" id="photo27" src=".\image\womanschoose (1).png" alt="Image 27" >
-                        <button style="position:absolute; z-index:5000; top:35px; font-size: 25px;color:black;left:30px; " onclick="addToBasket('order27', 'photo27')">
-                            Choose</button>
-       
-
-                         <img class="carousel-image" id="photo28" src=".\image\womanschoose (2).png" alt="Image 28" >
-                            <button style="position:absolute; z-index:5000; top:35px; left:30px; font-size: 25px;color:black; " onclick="addToBasket('order28', 'photo28')">
-        Choose
-    </button>
-    <img class="carousel-image" id="photo28" src=".\image\womanschoose (2).png" alt="Image 28" >
-                            <button style="position:absolute; z-index:5000; top:35px; font-size: 25px;color:black; " onclick="addToBasket('order29', 'photo29')">
-        Choose
-    </button>
-                         
-                       
-                            <p id="order27" >Номер заказа : 27 Женские солнцезащитные очки. Цена 2700 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order28" >Номер заказа : 28 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order29">Номер заказа : 29 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order30">Номер заказа : 30 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order31">Номер заказа : 31 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p>
-                            <p id="order32">Номер заказа : 32 Женские солнцезащитные очки. Цена 1350 руб.Мы надеемся, что вы быстро ответите.</p> 
-                            
-                            
-                        </div>
+  <input class="pp" type="file" id="background-input" accept="image/*" onchange="uploadBackground()">
+  <div id="image-container" class="hit">
+                        <img class="carousel-image" id="photo27" src=".\image\womanschoose (1).png" alt="Женские kлассическиe очки — модель 27" loading="lazy">
+                        <img class="carousel-image" id="photo28" src=".\image\womanschoose (2).png" alt="Женские kлассическиe очки — модель 28" loading="lazy">
+                        <img class="carousel-image" id="photo29" src=".\image\womanschoose (3).png" alt="Женские kлассическиe очки — модель 29" loading="lazy">
+                        <img class="carousel-image" id="photo30" src=".\image\womanschoose (4).png" alt="Женские kлассическиe очки — модель 30" loading="lazy">
+                        <img class="carousel-image" id="photo31" src=".\image\womanschoose (5).png" alt="Женские kлассическиe очки — модель 31" loading="lazy">
+                        <img class="carousel-image" id="photo32" src=".\image\womanschoose (6).png" alt="Женские kлассическиe очки — модель 32" loading="lazy">
+                        <img class="carousel-image" id="photo33" src=".\image\womanschoose (7).png" alt="Женские kлассическиe очки — модель 33" loading="lazy">
+                        <img class="carousel-image" id="photo34" src="./image\womanschoose (8).png" alt="Женские kлассическиe очки — модель 34" loading="lazy">
+                        <img class="carousel-image" id="photo35" src="./image\womanschoose (8).png" alt="Женские kлассическиe очки — модель 34" loading="lazy"> 
+                        <img class="carousel-image" id="photo36" src=".\image\womanschoose (10).png" alt="Женские kлассическиe очки — модель 36" loading="lazy">
+                        <img class="carousel-image" id="photo37" src=".\image\womanschoose (11).png" alt="Женские kлассическиe очки — модель 37" loading="lazy">
+                        <img class="carousel-image" id="photo38" src=".\image\womanschoose (12).png" alt="Женские kлассическиe очки — модель 38" loading="lazy">
+                        <img class="carousel-image" id="photo39" src=".\image\womanschoose (13).png" alt="Женские kлассическиe очки — модель 39" loading="lazy">
+                        <img class="carousel-image" id="photo40" src=".\image\womanschoose (14).png" alt="Женские kлассическиe очки — модель 40" loading="lazy">
+                        <img class="carousel-image" id="photo41" src=".\image\womanschoose (15).png" alt="Женские kлассическиe очки — модель 41" loading="lazy">
+                        <img class="carousel-image" id="photo42" src=".\image\womanschoose (16).png" alt="Женские kлассическиe очки — модель 42" loading="lazy">
+                        <img class="carousel-image" id="photo43" src=".\image\womanschoose (17).png" alt="Женские kлассическиe очки — модель 43" loading="lazy">
+                        <img class="carousel-image" id="photo44" src=".\image\womanschoose (18).png" alt="Женские kлассическиe очки — модель 44" loading="lazy">
+                        <img class="carousel-image" id="photo45" src=".\image\womanschoose (19).png" alt="Женские kлассическиe очки — модель 45" loading="lazy">
+                        <img class="carousel-image" id="photo46" src=".\image\womanschoose (20).png" alt="Женские kлассическиe очки — модель 46" loading="lazy">
+                        <img class="carousel-image" id="photo47" src=".\image\womanschoose (21).png" alt="Женские kлассическиe очки — модель 47" loading="lazy">
+                        <img class="carousel-image" id="photo48" src=".\image\womanschoose (22).png" alt="Женские kлассическиe очки — модель 48" loading="lazy">
                         
-    
-                    </div>
 
+  </div>
+  <div class="choose-product-area">
+    <button type="button" id="choose-current-button" class="choose-current-button">Выбрать эти очки</button>
+    <span id="choose-feedback" role="status" aria-live="polite"></span>
+  </div>
+</div>
                     <div style="text-align:center;margin-top:10px;">
                         <div class="nextbut"><button class="prev" id="prevBtn" onclick="changeSlide(-1)">Предыдущий</button>
                         <button class="next" id="nextBtn" onclick="changeSlide(1)">Следующий</button></div>
@@ -239,7 +253,7 @@ button.textContent = "Читать";  // Change button text back to "Toggle Text
                             onclick="moveBackground('less')">Меньше</button>
     
     
-                        .
+                        
     
                         <button class="more" id="more" onclick="moveBackground('more')">Больше</button>
                     </div>
@@ -260,7 +274,7 @@ button.textContent = "Читать";  // Change button text back to "Toggle Text
             </div>
 
 
-            <div  class="senter" id="sender">
+             <div  class="senter" id="sender">
                 &nbsp;&nbsp;<br>Если у вас возникли проблемы и что-то не понятно.  
                 &nbsp;&nbsp;<br>Вы можете сделать это проще,
                 Отправьте нам сообщение по указанному номеру телефона 
@@ -302,15 +316,15 @@ button.textContent = "Читать";  // Change button text back to "Toggle Text
                   </div>
               
                   <div class="bod">
-                    <a class="dno" href="Jekky-shop.html">Наш магазин</a>
-                    <a class="dno" href="Choose-on-the-face.html">Выбор по лицу</a>
-                    <a class="dno" href="catalog-sunglasses-jekky.html">Выбрать в каталоге</a>
-                    <a class="dno" href="Contact-lens-soflens.html">Контактные линзы «Soflens»</a>
-                    <a class="dno" href="color-lens-hera.html">Цветные контактные линзы «Hera»</a>
-                    <a class="dno" href="#hop">Перейти к началу</a>
-                    <a class="dno" href="sertification-and-documents.html">Документация</a>
-                    
-                </div>
+                      <a class="dno" href="Jekky-shop.html">Наш магазин</a>
+                      <a class="dno" href="Choose-on-the-face.html">Выбор по лицу</a>
+                      <a class="dno" href="catalog-sunglasses-jekky.html">Выбрать в каталоге</a>
+                      <a class="dno" href="Contact-lens-soflens.html">Контактные линзы «Soflens»</a>
+                      <a class="dno" href="color-lens-hera.html">Цветные контактные линзы «Hera»</a>
+                      <a class="dno" href="#hop">Перейти к началу</a>
+                      <a class="dno" href="sertification-and-documents.html">Документация</a>
+                      
+                  </div>
               </div>
               
               </footer>
@@ -323,7 +337,8 @@ button.textContent = "Читать";  // Change button text back to "Toggle Text
                     <div class="slide"><img class="slideimg"  src=".\image\pl5001 (4).png" alt="Slide 5"></div>
                     <div class="slide"><img class="slideimg"  src=".\image\pl5001 (5).png" alt="Slide 6"></div>
                     </div></div>
-              
+  <script src="jekky.js" defer></script>
+  <script src="basket.js" defer></script>
 </body>
 
 </html>
